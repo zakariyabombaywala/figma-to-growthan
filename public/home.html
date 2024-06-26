@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../public/css/main.css" />
+    <!-- Fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <!-- Font Family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <title>Figma to Growthan</title>
+  </head>
+  <body class="font-nunito">
+    <header id="header">
+      <!-- Navbar -->
+      <nav class="relative mx-auto p-6 lg:container">
+        <!-- Flex Container -->
+        <div class="flex justify-between items-baseline">
+          <!-- logo -->
+          <div class="w-32">
+            <img src="image/logo.png" alt="" class="w-auto h-auto" />
+          </div>
+          <!-- Menu Item -->
+          <div class="hidden space-x-6 md:flex">
+            <a href="#" class="text-blue font-semibold hover:text-red">Home</a>
+            <a href="#" class="text-blue font-semibold hover:text-red"
+              >About Us</a
+            >
+            <a href="#" class="text-blue font-semibold hover:text-red"
+              >Services</a
+            >
+            <a href="#" class="text-blue font-semibold hover:text-red"
+              >Contact Us</a
+            >
+          </div>
+
+          <!-- Button -->
+          <a
+            href="#"
+            class="hidden bg-blue drop-shadow-md text-white p-3 px-6 pt-2 rounded-md md:block"
+            >Register</a
+          >
+        </div>
+      </nav>
+
+      <!-- Hero section -->
+      <section id="hero">
+        <!-- Flex Container -->
+        <div
+          class="container flex flex-col-reverse justify-center items-center px-6 mx-auto mt-10 space-y-0 md:space-y-0 md:flex-row"
+        >
+          <!-- Left item -->
+          <div class="flex flex-col space-y-12 md:w-1/2">
+            <h1 class="text-4xl font-bold text-blue w-96">
+              Driving the Digital Growth by
+              <span class="text-red">Affiliate Marketing</span>
+            </h1>
+            <div class="flex justify-center md:justify-start">
+              <a
+                href="#"
+                class="bg-blue drop-shadow-md text-white p-3 px-6 pt-2 rounded-md"
+                >Register</a
+              >
+            </div>
+          </div>
+          <!-- Image -->
+          <div class="md:w-1/2 flex justify-center">
+            <img src="image/hero-img.png" class="" alt="" />
+          </div>
+        </div>
+      </section>
+    </header>
+
+    <!-- Main -->
+    <main>
+      <!-- Service Section -->
+      <section id="service" class="mt-40">
+        <!-- Flex Container -->
+        <div class="container mx-auto px-6">
+          <!-- Section Head -->
+          <div class="flex justify-between items-center mb-16">
+            <!-- left -->
+            <div class="flex space-x-6 items-center">
+              <div class="bg-blue rounded-full p-3 md:p-6">
+                <img
+                  src="image/service.svg"
+                  class="size-4 md:size-auto"
+                  alt=""
+                />
+              </div>
+              <div class="flex flex-col">
+                <h5 class="uppercase font-nunitosans text-blue font-bold mb-4">
+                  services
+                </h5>
+                <!-- title -->
+                <h2 class="capitalize text-blue font-bold text-3xl">
+                  services we provide
+                </h2>
+              </div>
+            </div>
+            <!-- button -->
+            <a
+              href="#"
+              class="hidden items-center capitalize bg-blue drop-shadow-md text-white p-4 rounded-md text-sm md:flex"
+              >our services
+              <span><img src="image/arrow-svg.svg" class="ml-4" alt="" /></span>
+            </a>
+          </div>
+
+          <!-- Section Content -->
+          <div class="grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-3">
+            <!-- Service Card 1 -->
+            <div
+              class="flex flex-col items-start p-10 rounded-2xl bg-gradient-to-br from-blue-200 via-red-400 to-red-400"
+            >
+              <!-- Card Image -->
+              <div class="mb-4">
+                <img src="image/performance.svg" alt="" />
+              </div>
+              <!-- Card title -->
+              <h2 class="text-blue font-bold mb-6 text-xl">
+                Performance Marketing
+              </h2>
+              <!-- Card content -->
+              <p class="text-blue-900">
+                Get the best results for your marketing campaigns by leveraging
+                data-driven insights and analytics.
+              </p>
+            </div>
+
+            <!-- Service Card 2 -->
+            <div
+              class="flex flex-col items-start p-10 rounded-2xl bg-gradient-to-br from-blue-200 via-red-400 to-red-400"
+            >
+              <!-- Card Image -->
+              <div class="mb-4">
+                <img src="image/mobile.svg" alt="" />
+              </div>
+              <!-- Card title -->
+              <h2 class="text-blue font-bold mb-6 text-xl">Mobile Marketing</h2>
+              <!-- Card content -->
+              <p class="text-blue-900">
+                Reach your target audience wherever they are with
+                mobile-optimized campaigns that drive engagement and
+                conversions.
+              </p>
+            </div>
+
+            <!-- Service Card 3 -->
+            <div
+              class="flex flex-col items-start p-10 rounded-2xl bg-gradient-to-br from-blue-200 via-red-400 to-red-400"
+            >
+              <!-- Card Image -->
+              <div class="mb-4">
+                <img src="image/email.svg" alt="" />
+              </div>
+              <!-- Card title -->
+              <h2 class="text-blue font-bold mb-6 text-xl">Email Marketing</h2>
+              <!-- Card content -->
+              <p class="text-blue-900">
+                Build stronger relationships with your customers by delivering
+                personalized content straight to their inbox.
+              </p>
+            </div>
+
+            <!-- Service Card 4 -->
+            <div
+              class="flex flex-col items-start p-10 rounded-2xl bg-gradient-to-br from-blue-200 via-red-400 to-red-400"
+            >
+              <!-- Card Image -->
+              <div class="mb-4">
+                <img src="image/media.svg" alt="" />
+              </div>
+              <!-- Card title -->
+              <h2 class="text-blue font-bold mb-6 text-xl">
+                Media Buying & Planning
+              </h2>
+              <!-- Card content -->
+              <p class="text-blue-900">
+                Maximize your ROI by identifying the right media channels and
+                placements to reach your target audience.
+              </p>
+            </div>
+
+            <!-- Service Card 5 -->
+            <div
+              class="flex flex-col items-start p-10 rounded-2xl bg-gradient-to-br from-blue-200 via-red-400 to-red-400"
+            >
+              <!-- Card Image -->
+              <div class="mb-4">
+                <img src="image/influence.svg" alt="" />
+              </div>
+              <!-- Card title -->
+              <h2 class="text-blue font-bold mb-6 text-xl">
+                Influencer Marketing
+              </h2>
+              <!-- Card content -->
+              <p class="text-blue-900">
+                Amplify your brand's reach and credibility by partnering with
+                influencers who align with your brand values.
+              </p>
+            </div>
+
+            <!-- Service Card 6 -->
+            <div
+              class="flex flex-col items-start p-10 rounded-2xl bg-gradient-to-br from-blue-200 via-red-400 to-red-400"
+            >
+              <!-- Card Image -->
+              <div class="mb-4">
+                <img src="image/content.svg" alt="" />
+              </div>
+              <!-- Card title -->
+              <h2 class="text-blue font-bold mb-6 text-xl">
+                Content Marketing
+              </h2>
+              <!-- Card content -->
+              <p class="text-blue-900">
+                Engage your audience with high-quality and relevant content that
+                educates, entertains, and inspires action.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Why We section -->
+      <section id="why"></section>
+    </main>
+    <!-- javascript -->
+    <script src="js/main.js"></script>
+  </body>
+</html>
