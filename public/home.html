@@ -21,17 +21,23 @@
   <body class="font-nunito">
     <header id="header" class="min-h-screen">
       <!-- Navbar -->
-      <nav class="">
+      <nav id="nav" class="bg-white md:bg-transparent">
         <!-- Flex Container -->
-        <div class="mx-auto p-6 container flex justify-between items-baseline">
+        <div
+          class="mx-auto p-6 container flex justify-between items-start md:items-baseline"
+        >
           <!-- logo -->
-          <div class="w-32">
-            <img src="image/logo.png" alt="" class="w-auto h-auto" />
+          <div class="w-36">
+            <a href="home.html"
+              ><img src="image/logo.png" alt="" class="w-auto h-auto"
+            /></a>
           </div>
           <!-- Menu Item -->
           <div class="hidden space-x-6 md:flex">
             <a href="#" class="text-blue font-semibold hover:text-red">Home</a>
-            <a href="#" class="text-blue font-semibold hover:text-red"
+            <a
+              href="../public/about.html"
+              class="text-blue font-semibold hover:text-red"
               >About Us</a
             >
             <a href="#" class="text-blue font-semibold hover:text-red"
@@ -48,6 +54,29 @@
             class="hidden bg-blue drop-shadow-md text-white p-3 px-6 pt-2 rounded-md md:block"
             >Register</a
           >
+
+          <!-- Hamburger Icon -->
+          <button
+            id="menu-btn"
+            class="block hamburger p-3 md:hidden focus:outline-none"
+          >
+            <span class="hamburger-top"></span>
+            <span class="hamburger-middle"></span>
+            <span class="hamburger-bottom"></span>
+          </button>
+        </div>
+        <!-- Mobile Menu -->
+
+        <div class="md:hidden">
+          <div
+            id="menu"
+            class="link hidden flex absolute flex-col items-center self-end py-8 space-y-6 font-bold bg-blue text-white left-6 right-6 drop-shadow-md sm:w-auto sm:self-center"
+          >
+            <a href="#" class="scroll-link">Home</a>
+            <a href="#" class="scroll-link">About Us</a>
+            <a href="#" class="scroll-link">Services</a>
+            <a href="#" class="scroll-link">Contact Us</a>
+          </div>
         </div>
       </nav>
 
@@ -466,7 +495,143 @@
           <img src="image/banner-testm.png" alt="" />
         </div>
       </section>
+
+      <!-- Offer section -->
+      <section id="offer" class="mt-40">
+        <!-- Container -->
+        <div class="container mx-auto px-6">
+          <!-- Flex -->
+          <div
+            class="flex flex-col-reverse justify-center items-center md:flex-row"
+          >
+            <!-- Left -->
+            <div class="md:w-1/3">
+              <img src="image/offer.png" alt="image" />
+            </div>
+
+            <!-- right -->
+            <div class="flex flex-col md:w-1/2">
+              <!-- Content Header -->
+              <div class="flex space-x-6 items-center border-b pb-4 mb-4">
+                <div class="w-16 md:w-auto">
+                  <img src="image/offer-icon.png" class="" alt="" />
+                </div>
+                <div class="flex flex-col">
+                  <h5
+                    class="uppercase font-nunitosans text-blue font-bold mb-4 text-xs md:text-base"
+                  >
+                    <span class="text-red">/ / </span> GET THE BEST
+                  </h5>
+                  <!-- title -->
+                  <h2
+                    class="capitalize text-blue font-bold text-xl md:text-3xl"
+                  >
+                    We Offer Reliable Solution To Increase Brand Visibility
+                  </h2>
+                </div>
+              </div>
+
+              <!-- Content -->
+              <div class="mb-6">
+                <p class="text-justify text-blue-900 font-semibold">
+                  We help brands to advertise on Web & Mobile medium. We help
+                  brands to select best medium with optimum module in order to
+                  maximize their ROI. Our experienced Media Buying & Planning
+                  team help brands to achieve their desired results through
+                  optimum inventory. We help brands of different verticals to
+                  choose best module with best medium to work on in order to
+                  acquire quality customers. Our Ad operations and development
+                  team help advertisers in optimizing the creatives and landing
+                  pages for the increase in-conversion rate
+                </p>
+              </div>
+
+              <!-- Button -->
+              <div class="flex justify-start">
+                <a
+                  href="#"
+                  class="bg-blue drop-shadow-md text-white p-3 px-6 pt-2 rounded-md mb-12 md:m-b0"
+                  >Register</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
+
+    <!-- Footer -->
+    <footer id="footer" class="bg-blue mt-10">
+      <!-- Container -->
+      <div class="container mx-auto px-6 pt-20 text-white">
+        <!-- Footer Links container -->
+        <div class="grid grid-cols-1 gap-7 mb-24 lg:grid-cols-4 md:grid-cols-3">
+          <!-- Page link -->
+          <div class="space-y-8">
+            <!-- Link title -->
+            <h4 class="text-xl font-semibold tracking-wider">Pages</h4>
+            <ul class="space-y-2">
+              <li><a href="" class="tracking-wider">Home</a></li>
+              <li><a href="" class="tracking-wider">Service</a></li>
+              <li><a href="" class="tracking-wider">About</a></li>
+              <li><a href="" class="tracking-wider">Contact</a></li>
+            </ul>
+          </div>
+          <!-- Social link -->
+          <div class="space-y-8">
+            <!-- Link title -->
+            <h4 class="text-xl font-semibold tracking-wider">Social Logins</h4>
+            <ul class="space-y-2">
+              <li><a href="" class="tracking-wider">Facebook</a></li>
+              <li><a href="" class="tracking-wider">Twitter</a></li>
+              <li><a href="" class="tracking-wider">Instagram</a></li>
+              <li><a href="" class="tracking-wider">Skype</a></li>
+            </ul>
+          </div>
+          <!-- Location link -->
+          <div class="space-y-8">
+            <!-- Link title -->
+            <h4 class="text-xl font-semibold tracking-wider">Location</h4>
+            <ul class="space-y-2">
+              <li>
+                <a href="" class="underline max-w-80 block tracking-wider"
+                  >UNIT NO. 147, FIRST FLOOR, JMD MEGAPOLIS, Badshahpur Sohna Rd
+                  Hwy, Sector 48, Gurugram, Haryana 122018 .</a
+                >
+              </li>
+              <li>
+                <a href="" class="underline tracking-wider">Location Map</a>
+              </li>
+            </ul>
+          </div>
+          <!-- Contact link -->
+          <div class="space-y-8">
+            <!-- Link title -->
+            <h4 class="text-xl font-semibold tracking-wider">
+              Get in touch with
+            </h4>
+            <div class="flex md:justify-start">
+              <a
+                href="#"
+                class="bg-blue-900 font-bold drop-shadow-md text-white p-3 px-6 pt-2 rounded-md mb-12 tracking-wider md:m-b0 lg:text-xl"
+                >+91 8617514085</a
+              >
+            </div>
+            <!-- email -->
+            <a href="#" class="underline tracking-wider"
+              >business@growthan.com</a
+            >
+          </div>
+        </div>
+
+        <!-- Copyright text -->
+        <div class="border-t py-4">
+          <p class="text-center tracking-wider">
+            Copyright &copy; 2023 | Growthan | All rights reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
     <!-- javascript -->
     <script src="js/main.js"></script>
   </body>
