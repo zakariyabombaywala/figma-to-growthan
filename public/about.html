@@ -18,10 +18,10 @@
     />
     <title>About Us</title>
   </head>
-  <body>
+  <body class="font-nunito">
     <header class="fixed top-0 inset-x-0">
       <!-- Navbar -->
-      <nav id="nav" class="bg-white md:bg-transparent">
+      <nav id="nav">
         <!-- Flex Container -->
         <div
           class="mx-auto p-6 container flex justify-between items-start md:items-baseline"
@@ -53,42 +53,30 @@
           <!-- Button -->
           <a
             href="#"
-            class="hidden bg-blue drop-shadow-md text-white p-3 px-6 pt-2 rounded-md md:block"
+            class="hidden bg-blue drop-shadow-md text-white p-3 px-6 pt-2 rounded-md hover:bg-transparent hover:text-blue hover:border-blue hover:border md:block"
             >Register</a
           >
 
           <!-- Hamburger Icon -->
           <button
             id="menu-btn"
-            class="block hamburger p-3 md:hidden focus:outline-none"
+            class="hamburger items-center p-2 text-2xl flex justify-center md:hidden focus:outline-none hover:rotate-90 transition-all"
           >
-            <span class="hamburger-top"></span>
-            <span class="hamburger-middle"></span>
-            <span class="hamburger-bottom"></span>
+            <i class="fas fa-bars"></i>
           </button>
-        </div>
-        <!-- Mobile Menu -->
-
-        <div class="md:hidden">
-          <div
-            id="menu"
-            class="link hidden flex absolute flex-col items-center self-end py-8 space-y-6 font-bold bg-blue text-white left-6 right-6 drop-shadow-md sm:w-auto sm:self-center"
-          >
-            <a href="#" class="scroll-link">Home</a>
-            <a href="#" class="scroll-link">About Us</a>
-            <a href="#" class="scroll-link">Services</a>
-            <a href="#" class="scroll-link">Contact Us</a>
-          </div>
         </div>
       </nav>
     </header>
 
     <main>
       <!-- Hero section -->
-      <section class="bg-about bg-cover bg-center bg-no-repeat min-h-[300px] max-h-[605px] h-full">
-          <div class="">
-            <h1 class="">About us</h1>
-          </div>
+      <section
+        class="bg-about bg-cover bg-center bg-no-repeat min-h-[300px] max-h-[605px] h-full"
+      >
+        <div class="flex justify-center pt-96 pb-40">
+          <h1 class="capitalize text-5xl text-blue font-extrabold">
+            About <span class="text-red"> us</span>
+          </h1>
         </div>
       </section>
 
@@ -150,7 +138,7 @@
               <div class="flex justify-start">
                 <a
                   href="#"
-                  class="capitalize border border-blue drop-shadow-md text-blue font-semibold p-3 px-6 pt-2 rounded-md mb-12 md:m-b0"
+                  class="capitalize border border-blue drop-shadow-md text-blue font-semibold p-3 px-6 pt-2 rounded-md mb-12 md:m-b0 hover:bg-blue hover:text-white"
                   >Get in touch</a
                 >
               </div>
@@ -187,7 +175,7 @@
 
           <!-- Value Cards -->
           <div
-            class="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-6 mb-10"
+            class="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-6 mb-10 mt-10"
           >
             <!-- Card 1 -->
             <div
@@ -258,14 +246,14 @@
             <div class="flex justify-start">
               <a
                 href="#"
-                class="flex items-center capitalize border border-blue drop-shadow-md text-blue font-semibold p-3 px-6 pt-2 rounded-md"
+                class="flex items-center capitalize border border-blue shadow-md text-blue font-semibold p-3 px-6 pt-2 rounded-md hover:bg-blue hover:text-white"
                 >Get in touch</a
               >
             </div>
             <div class="flex justify-start">
               <a
                 href="#"
-                class="items-center capitalize bg-blue drop-shadow-md text-white p-4 rounded-md flex"
+                class="items-center capitalize bg-blue shadow-md text-white p-4 rounded-md flex hover:bg-transparent hover:text-blue hover:border-blue hover:border"
                 >our services
                 <span
                   ><img src="image/arrow-svg.svg" class="ml-4" alt=""
@@ -275,7 +263,185 @@
           </div>
         </div>
       </section>
+
+      <!-- Our Team section -->
+      <section id="team" class="my-20 md:mt-15">
+        <!-- Container -->
+        <div class="container mx-auto px-6">
+          <!-- Team Head -->
+          <div
+            class="flex flex-col justify-center items-center pb-4 mb-4 space-y-6"
+          >
+            <div class="w-16 md:w-auto">
+              <img src="image/our-values.png" class="" alt="" />
+            </div>
+            <div class="flex flex-col justify-center items-center">
+              <h5
+                class="uppercase font-nunito text-blue font-semibold mb-4 text-xs md:text-base"
+              >
+                <span class="text-red">/ / </span> OUR TEAM
+              </h5>
+              <!-- title -->
+              <h2
+                class="capitalize text-blue font-semibold text-xl md:text-3xl"
+              >
+                Our team of expert marketers
+              </h2>
+            </div>
+          </div>
+
+          <!-- Team Cards -->
+          <div
+            class="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-6 mb-10 mt-10"
+          >
+            <!-- Card 1 -->
+            <div
+              class="p-8 flex flex-col items-center rounded-3xl border border-gray-200"
+            >
+              <!-- Card Image -->
+              <div>
+                <img src="image/team3.jpg" class="rounded-t-3xl" alt="" />
+              </div>
+              <div class="h-0.5 w-16 my-8 bg-blue"></div>
+              <!-- Card Title -->
+              <h4 class="text-xl font-semibold text-blue mb-3 md:text-2xl">
+                Dr. Shailesh Agrawal
+              </h4>
+              <!-- Card desc -->
+              <p class="text-center mb-4 text-blue-900">
+                M.S (Ophthalmology) Gold Medalist
+              </p>
+
+              <!-- Social Links -->
+              <div class="flex justify-center items-center space-x-3">
+                <a href=""><img src="image/Facebook.png" alt="" /></a>
+                <a href=""><img src="image/Twitter.png" alt="" /></a>
+              </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div
+              class="p-8 flex flex-col items-center rounded-3xl border border-gray-200"
+            >
+              <!-- Card Image -->
+              <div>
+                <img src="image/team1.jpg" class="rounded-t-3xl" alt="" />
+              </div>
+              <div class="h-0.5 w-16 my-8 bg-blue"></div>
+              <!-- Card Title -->
+              <h4 class="text-xl font-semibold text-blue mb-3 md:text-2xl">
+                Richard Walsh
+              </h4>
+              <!-- Card desc -->
+              <p class="text-center mb-4 text-blue-900">Lead Manager</p>
+
+              <!-- Social Links -->
+              <div class="flex justify-center items-center space-x-3">
+                <a href=""><img src="image/Facebook.png" alt="" /></a>
+                <a href=""><img src="image/Twitter.png" alt="" /></a>
+                <a href=""><img src="image/Instagram.png" alt="" /></a>
+              </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div
+              class="p-8 flex flex-col items-center rounded-3xl border border-gray-200"
+            >
+              <!-- Card Image -->
+              <div>
+                <img src="image/team2.jpg" class="rounded-t-3xl" alt="" />
+              </div>
+              <div class="h-0.5 w-16 my-8 bg-blue"></div>
+              <!-- Card Title -->
+              <h4 class="text-xl font-semibold text-blue mb-3 md:text-2xl">
+                Richard Walsh
+              </h4>
+              <!-- Card desc -->
+              <p class="text-center mb-4 text-blue-900">Lead Manager</p>
+
+              <!-- Social Links -->
+              <div class="flex justify-center items-center space-x-3">
+                <a href=""><img src="image/Facebook.png" alt="" /></a>
+                <a href=""><img src="image/Instagram.png" alt="" /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
+
+    <!-- Footer -->
+    <footer id="footer" class="bg-blue mt-10">
+      <!-- Container -->
+      <div class="container mx-auto px-6 pt-20 text-white">
+        <!-- Footer Links container -->
+        <div class="grid grid-cols-1 gap-7 mb-24 lg:grid-cols-4 md:grid-cols-3">
+          <!-- Page link -->
+          <div class="space-y-8">
+            <!-- Link title -->
+            <h4 class="text-xl font-semibold tracking-wider">Pages</h4>
+            <ul class="space-y-2">
+              <li><a href="" class="tracking-wider">Home</a></li>
+              <li><a href="" class="tracking-wider">Service</a></li>
+              <li><a href="" class="tracking-wider">About</a></li>
+              <li><a href="" class="tracking-wider">Contact</a></li>
+            </ul>
+          </div>
+          <!-- Social link -->
+          <div class="space-y-8">
+            <!-- Link title -->
+            <h4 class="text-xl font-semibold tracking-wider">Social Logins</h4>
+            <ul class="space-y-2">
+              <li><a href="" class="tracking-wider">Facebook</a></li>
+              <li><a href="" class="tracking-wider">Twitter</a></li>
+              <li><a href="" class="tracking-wider">Instagram</a></li>
+              <li><a href="" class="tracking-wider">Skype</a></li>
+            </ul>
+          </div>
+          <!-- Location link -->
+          <div class="space-y-8">
+            <!-- Link title -->
+            <h4 class="text-xl font-semibold tracking-wider">Location</h4>
+            <ul class="space-y-2">
+              <li>
+                <a href="" class="underline max-w-80 block tracking-wider"
+                  >UNIT NO. 147, FIRST FLOOR, JMD MEGAPOLIS, Badshahpur Sohna Rd
+                  Hwy, Sector 48, Gurugram, Haryana 122018 .</a
+                >
+              </li>
+              <li>
+                <a href="" class="underline tracking-wider">Location Map</a>
+              </li>
+            </ul>
+          </div>
+          <!-- Contact link -->
+          <div class="space-y-8">
+            <!-- Link title -->
+            <h4 class="text-xl font-semibold tracking-wider">
+              Get in touch with
+            </h4>
+            <div class="flex md:justify-start">
+              <a
+                href="#"
+                class="bg-blue-900 font-bold shadow-xl text-white p-3 px-6 pt-2 rounded-md mb-12 tracking-wider md:m-b0 lg:text-xl"
+                >+91 8617514085</a
+              >
+            </div>
+            <!-- email -->
+            <a href="#" class="underline tracking-wider"
+              >business@growthan.com</a
+            >
+          </div>
+        </div>
+
+        <!-- Copyright text -->
+        <div class="border-t py-4">
+          <p class="text-center tracking-wider">
+            Copyright &copy; 2023 | Growthan | All rights reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
     <!-- javascript -->
     <script src="js/main.js"></script>
   </body>

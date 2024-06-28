@@ -25,6 +25,7 @@ module.exports = {
         },
         gray: {
           DEFAULT: "#555555",
+          200: "#dcdcdc",
         },
       },
       backgroundImage: {
