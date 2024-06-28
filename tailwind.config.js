@@ -6,6 +6,13 @@ module.exports = {
       fontFamily: {
         nunito: ["Nunito", "sans-serif"],
       },
+      container: {
+        center: true,
+        padding: "1rem",
+        screens: {
+          DEFAULT: "1200px",
+        },
+      },
       colors: {
         blue: {
           DEFAULT: "#162466",
@@ -31,6 +38,11 @@ module.exports = {
       backgroundImage: {
         home: "url(/public/image/banner-image.png)",
         about: "url(/public/image/about-banner.png)",
+        service: "url(/public/image/services-banner.png)",
+        contact: "url(/public/image/career-banner.png)",
+        career: "url(/public/image/career-banner.png)",
+        policy: "url(/public/image/career-banner.png)",
+        banner: "url(/public/image/service-cta-banner.png)",
       },
     },
   },

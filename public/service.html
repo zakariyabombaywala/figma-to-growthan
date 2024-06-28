@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <!-- Font Family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../public/css/main.css" />
+    <title>Service</title>
+  </head>
+  <body class="font-nunito">
+    <header class="fixed top-0 inset-x-0">
+      <!-- Navbar -->
+      <nav id="nav">
+        <!-- Flex Container -->
+        <div
+          class="mx-auto p-6 container flex justify-between items-start md:items-baseline"
+        >
+          <!-- logo -->
+          <div class="w-36">
+            <a href="#"
+              ><img src="image/logo.png" alt="" class="w-auto h-auto"
+            /></a>
+          </div>
+          <!-- Menu Item -->
+          <div class="hidden space-x-12 md:flex">
+            <a
+              href="../public/home.html"
+              class="text-blue font-semibold hover:text-red"
+              >Home</a
+            >
+            <a
+              href="../public/about.html"
+              class="text-blue font-semibold hover:text-red"
+              >About Us</a
+            >
+            <a
+              href="./service.html"
+              class="text-blue font-semibold hover:text-red"
+              >Services</a
+            >
+            <a href="#" class="text-blue font-semibold hover:text-red"
+              >Contact Us</a
+            >
+          </div>
+
+          <!-- Button -->
+          <a
+            href="#"
+            class="hidden bg-blue drop-shadow-md text-white p-3 px-6 pt-2 rounded-md hover:bg-transparent hover:text-blue hover:border-blue hover:border md:block"
+            >Register</a
+          >
+
+          <!-- Hamburger Icon -->
+          <button
+            id="menu-btn"
+            class="hamburger items-center p-2 text-2xl flex justify-center md:hidden focus:outline-none hover:rotate-90 transition-all"
+          >
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Hero section -->
+      <section
+        class="bg-service bg-cover bg-center bg-no-repeat min-h-[300px] max-h-[605px] h-full"
+      >
+        <div class="flex justify-center pt-96 pb-40">
+          <h1 class="capitalize text-5xl text-blue font-extrabold">Services</h1>
+        </div>
+      </section>
+
+      <!-- Service section -->
+      <section id="service" class="mt-40">
+        <!-- Container -->
+        <div class="container mx-auto px-6">
+          <!-- Value Head -->
+          <div
+            class="flex flex-col justify-center items-center pb-4 mb-16 space-y-6"
+          >
+            <div class="w-16 md:w-auto">
+              <img src="image/setting-fill-icon.png" class="" alt="" />
+            </div>
+            <div class="flex flex-col justify-center items-center">
+              <h5
+                class="uppercase font-nunito text-blue font-semibold mb-4 text-xs md:text-base"
+              >
+                <span class="text-red">/ / </span> services
+              </h5>
+              <!-- title -->
+              <h2
+                class="text-blue font-semibold text-xl text-center max-w-[780px] md:text-4xl"
+              >
+                High-impact services to take your business to the next level
+              </h2>
+            </div>
+          </div>
+
+          <!-- Section Content -->
+          <div class="grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-3">
+            <!-- Service Card 1 -->
+            <div
+              class="flex flex-col items-start p-10 rounded-2xl bg-gradient-to-br from-blue-200 via-red-400 to-red-400"
+            >
+              <!-- Card Image -->
+              <div class="mb-4 w-24 md:w-28">
+                <img src="image/performance-icon.png" alt="" />
+              </div>
+              <!-- Card title -->
+              <h2 class="text-blue font-bold mb-6 text-xl">
+                Performance Marketing
+              </h2>
+              <!-- Card content -->
+              <p class="text-blue-900">
+                Get the best results for your marketing campaigns by leveraging
+                data-driven insights and analytics.
+              </p>
+            </div>
+
+            <!-- Service Card 2 -->
+            <div
+              class="flex flex-col items-start p-10 rounded-2xl bg-gradient-to-br from-blue-200 via-red-400 to-red-400"
+            >
+              <!-- Card Image -->
+              <div class="mb-4 w-24 md:w-28">
+                <img src="image/mobile-icon.png" alt="" />
+              </div>
+              <!-- Card title -->
+              <h2 class="text-blue font-bold mb-6 text-xl">Mobile Marketing</h2>
+              <!-- Card content -->
+              <p class="text-blue-900">
+                Reach your target audience wherever they are with
+                mobile-optimized campaigns that drive engagement and
+                conversions.
+              </p>
+            </div>
+
+            <!-- Service Card 3 -->
+            <div
+              class="flex flex-col items-start p-10 rounded-2xl bg-gradient-to-br from-blue-200 via-red-400 to-red-400"
+            >
+              <!-- Card Image -->
+              <div class="mb-4 w-24 md:w-28">
+                <img src="image/email-icon.png" alt="" />
+              </div>
+              <!-- Card title -->
+              <h2 class="text-blue font-bold mb-6 text-xl">Email Marketing</h2>
+              <!-- Card content -->
+              <p class="text-blue-900">
+                Build stronger relationships with your customers by delivering
+                personalized content straight to their inbox.
+              </p>
+            </div>
+
+            <!-- Service Card 4 -->
+            <div
+              class="flex flex-col items-start p-10 rounded-2xl bg-gradient-to-br from-blue-200 via-red-400 to-red-400"
+            >
+              <!-- Card Image -->
+              <div class="mb-4 w-24 md:w-28">
+                <img src="image/media-icon.png" alt="" />
+              </div>
+              <!-- Card title -->
+              <h2 class="text-blue font-bold mb-6 text-xl">
+                Media Buying & Planning
+              </h2>
+              <!-- Card content -->
+              <p class="text-blue-900">
+                Maximize your ROI by identifying the right media channels and
+                placements to reach your target audience.
+              </p>
+            </div>
+
+            <!-- Service Card 5 -->
+            <div
+              class="flex flex-col items-start p-10 rounded-2xl bg-gradient-to-br from-blue-200 via-red-400 to-red-400"
+            >
+              <!-- Card Image -->
+              <div class="mb-4 w-24 md:w-28">
+                <img src="image/influence-icon.png" alt="" />
+              </div>
+              <!-- Card title -->
+              <h2 class="text-blue font-bold mb-6 text-xl">
+                Influencer Marketing
+              </h2>
+              <!-- Card content -->
+              <p class="text-blue-900">
+                Amplify your brand's reach and credibility by partnering with
+                influencers who align with your brand values.
+              </p>
+            </div>
+
+            <!-- Service Card 6 -->
+            <div
+              class="flex flex-col items-start p-10 rounded-2xl bg-gradient-to-br from-blue-200 via-red-400 to-red-400"
+            >
+              <!-- Card Image -->
+              <div class="mb-4 w-24 md:w-28">
+                <img src="image/content-icon.png" alt="" />
+              </div>
+              <!-- Card title -->
+              <h2 class="text-blue font-bold mb-6 text-xl">
+                Content Marketing
+              </h2>
+              <!-- Card content -->
+              <p class="text-blue-900">
+                Engage your audience with high-quality and relevant content that
+                educates, entertains, and inspires action.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Banner section -->
+      <section id="contact-banner" class="mt-40">
+        <!-- Container -->
+        <div class="container mx-auto px-6">
+          <!-- Banner Image -->
+          <div class="bg-banner bg-no-repeat bg-center bg-cover">
+            <div class="py-[90px] px-[70px]">
+              <p class="text-blue text-4xl font-extrabold mb-8 inline-block">
+                Get in touch and
+                <span class="text-red"
+                  >start <br />
+                  growing</span
+                >
+                your startup today
+              </p>
+              <!-- Cta -->
+              <div class="flex space-x-2">
+                <a
+                  href="#"
+                  class="bg-blue shadow-md text-white p-3 px-6 pt-2 rounded-md hover:bg-transparent hover:text-blue hover:border-blue hover:border"
+                  >Register</a
+                >
+                <a
+                  href="#"
+                  class="bg-transparent shadow-md text-blue border border-blue p-3 px-6 pt-2 rounded-md hover:bg-blue hover:text-white"
+                  >Register</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="footer" class="bg-blue mt-10">
+      <!-- Container -->
+      <div class="container mx-auto px-6 pt-20 text-white">
+        <!-- Footer Links container -->
+        <div class="grid grid-cols-1 gap-7 mb-24 lg:grid-cols-4 md:grid-cols-3">
+          <!-- Page link -->
+          <div class="space-y-8">
+            <!-- Link title -->
+            <h4 class="text-xl font-semibold tracking-wider">Pages</h4>
+            <ul class="space-y-2">
+              <li><a href="" class="tracking-wider">Home</a></li>
+              <li><a href="" class="tracking-wider">Service</a></li>
+              <li><a href="" class="tracking-wider">About</a></li>
+              <li><a href="" class="tracking-wider">Contact</a></li>
+            </ul>
+          </div>
+          <!-- Social link -->
+          <div class="space-y-8">
+            <!-- Link title -->
+            <h4 class="text-xl font-semibold tracking-wider">Social Logins</h4>
+            <ul class="space-y-2">
+              <li><a href="" class="tracking-wider">Facebook</a></li>
+              <li><a href="" class="tracking-wider">Twitter</a></li>
+              <li><a href="" class="tracking-wider">Instagram</a></li>
+              <li><a href="" class="tracking-wider">Skype</a></li>
+            </ul>
+          </div>
+          <!-- Location link -->
+          <div class="space-y-8">
+            <!-- Link title -->
+            <h4 class="text-xl font-semibold tracking-wider">Location</h4>
+            <ul class="space-y-2">
+              <li>
+                <a href="" class="underline max-w-80 block tracking-wider"
+                  >UNIT NO. 147, FIRST FLOOR, JMD MEGAPOLIS, Badshahpur Sohna Rd
+                  Hwy, Sector 48, Gurugram, Haryana 122018 .</a
+                >
+              </li>
+              <li>
+                <a href="" class="underline tracking-wider">Location Map</a>
+              </li>
+            </ul>
+          </div>
+          <!-- Contact link -->
+          <div class="space-y-8">
+            <!-- Link title -->
+            <h4 class="text-xl font-semibold tracking-wider">
+              Get in touch with
+            </h4>
+            <div class="flex md:justify-start">
+              <a
+                href="#"
+                class="bg-blue-900 font-bold shadow-xl text-white p-3 px-6 pt-2 rounded-md mb-12 tracking-wider md:m-b0 lg:text-xl"
+                >+91 8617514085</a
+              >
+            </div>
+            <!-- email -->
+            <a href="#" class="underline tracking-wider"
+              >business@growthan.com</a
+            >
+          </div>
+        </div>
+
+        <!-- Copyright text -->
+        <div class="border-t py-4">
+          <p class="text-center tracking-wider">
+            Copyright &copy; 2023 | Growthan | All rights reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+    <!-- Javascript -->
+    <script src="js/main.js"></script>
+  </body>
+</html>
