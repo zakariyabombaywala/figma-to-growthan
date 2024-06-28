@@ -3,6 +3,9 @@ module.exports = {
   content: ["./public/*.html"],
   theme: {
     extend: {
+      fontFamily: {
+        nunito: ["Nunito", "sans-serif"],
+      },
       colors: {
         blue: {
           DEFAULT: "#162466",
@@ -24,9 +27,10 @@ module.exports = {
           DEFAULT: "#555555",
         },
       },
-    },
-    fontFamily: {
-      nunito: ["Nunito", "sans-serif"],
+      backgroundImage: {
+        home: "url(/public/image/banner-image.png)",
+        about: "url(/public/image/about-banner.png)",
+      },
     },
   },
   plugins: [],

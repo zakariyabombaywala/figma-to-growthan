@@ -19,21 +19,19 @@
     <title>Figma to Growthan</title>
   </head>
   <body class="font-nunito">
-    <header id="header" class="min-h-screen">
+    <header id="header" class="fixed top-0 inset-x-0">
       <!-- Navbar -->
-      <nav id="nav" class="bg-white md:bg-transparent">
+      <nav id="nav">
         <!-- Flex Container -->
-        <div
-          class="mx-auto p-6 container flex justify-between items-start md:items-baseline"
-        >
+        <div class="mx-auto p-6 container flex justify-between items-center">
           <!-- logo -->
-          <div class="w-36">
+          <div class="w-60">
             <a href="home.html"
               ><img src="image/logo.png" alt="" class="w-auto h-auto"
             /></a>
           </div>
           <!-- Menu Item -->
-          <div class="hidden space-x-6 md:flex">
+          <div class="hidden space-x-6 lg:flex">
             <a href="#" class="text-blue font-semibold hover:text-red">Home</a>
             <a
               href="../public/about.html"
@@ -51,65 +49,66 @@
           <!-- Button -->
           <a
             href="#"
-            class="hidden bg-blue drop-shadow-md text-white p-3 px-6 pt-2 rounded-md md:block"
+            class="hidden bg-blue shadow-xl text-white p-3 px-6 pt-2 rounded-md md:block hover:shadow-none hover:bg-transparent hover:text-blue hover:border-blue hover:border"
             >Register</a
           >
 
           <!-- Hamburger Icon -->
           <button
             id="menu-btn"
-            class="block hamburger p-3 md:hidden focus:outline-none"
+            class="hamburger items-center p-2 text-2xl flex justify-center md:hidden focus:outline-none hover:rotate-90 transition-all"
           >
-            <span class="hamburger-top"></span>
-            <span class="hamburger-middle"></span>
-            <span class="hamburger-bottom"></span>
+            <i class="fas fa-bars"></i>
           </button>
         </div>
         <!-- Mobile Menu -->
 
-        <div class="md:hidden">
+        <!-- <div class="md:hidden">
           <div
             id="menu"
-            class="link hidden flex absolute flex-col items-center self-end py-8 space-y-6 font-bold bg-blue text-white left-6 right-6 drop-shadow-md sm:w-auto sm:self-center"
+            class="link hidden flex absolute flex-col items-center self-end py-8 space-y-6 font-bold bg-blue text-white left-6 right-6 shadow-xl sm:w-auto sm:self-center"
           >
             <a href="#" class="scroll-link">Home</a>
             <a href="#" class="scroll-link">About Us</a>
             <a href="#" class="scroll-link">Services</a>
             <a href="#" class="scroll-link">Contact Us</a>
           </div>
-        </div>
+        </div> -->
       </nav>
-
-      <!-- Hero section -->
-      <section id="hero">
-        <!-- Flex Container -->
-        <div
-          class="container flex flex-col-reverse justify-center items-center px-6 mx-auto mt-10 space-y-0 min-h- md:h-full md:space-y-0 md:flex-row"
-        >
-          <!-- Left item -->
-          <div class="flex flex-col space-y-12 md:w-1/2">
-            <h1 class="text-5xl font-bold text-blue w-auto md:max-w-md">
-              Driving the Digital Growth by
-              <span class="text-red">Affiliate Marketing</span>
-            </h1>
-            <div class="flex justify-center md:justify-start">
-              <a
-                href="#"
-                class="bg-blue drop-shadow-md text-white p-3 px-6 pt-2 rounded-md mb-12 md:m-b0"
-                >Register</a
-              >
-            </div>
-          </div>
-          <!-- Image -->
-          <div class="md:w-1/2 flex justify-center">
-            <img src="image/hero-img.png" class="" alt="" />
-          </div>
-        </div>
-      </section>
     </header>
 
     <!-- Main -->
     <main>
+      <!-- Hero section -->
+      <section
+        class="bg-home bg-cover bg-center bg-no-repeat max-h-[1091px] h-full"
+      >
+        <!-- Flex Container -->
+        <div class="container px-6 mx-auto">
+          <div
+            class="pt-28 pb-[300px] flex flex-col-reverse justify-center items-center space-y-0 min-h- md:space-y-0 lg:flex-row"
+          >
+            <!-- Left item -->
+            <div class="flex flex-col space-y-12 md:w-1/2">
+              <h1 class="text-5xl font-bold text-blue w-auto md:max-w-md">
+                Driving the Digital Growth by
+                <span class="text-red">Affiliate Marketing</span>
+              </h1>
+              <div class="flex justify-center md:justify-start">
+                <a
+                  href="#"
+                  class="bg-blue shadow-xl text-white p-3 px-6 pt-2 rounded-md mb-12 md:m-b0 hover:shadow-none hover:bg-transparent hover:text-blue hover:border-blue hover:border"
+                  >Register</a
+                >
+              </div>
+            </div>
+            <!-- Image -->
+            <div class="md:w-1/2 flex justify-center">
+              <img src="image/hero-img.png" class="" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
       <!-- Service Section -->
       <section id="service" class="mt-40">
         <!-- Flex Container -->
@@ -136,7 +135,7 @@
             <!-- button -->
             <a
               href="#"
-              class="hidden items-center capitalize bg-blue drop-shadow-md text-white p-4 rounded-md text-sm md:flex"
+              class="hidden items-center capitalize bg-blue shadow-xl text-white p-4 rounded-md text-sm md:flex hover:shadow-none hover:bg-transparent hover:text-blue hover:border-blue hover:border"
               >our services
               <span><img src="image/arrow-svg.svg" class="ml-4" alt="" /></span>
             </a>
@@ -320,7 +319,7 @@
               <div class="flex justify-start">
                 <a
                   href="#"
-                  class="bg-blue drop-shadow-md text-white p-3 px-6 pt-2 rounded-md mb-12 md:m-b0"
+                  class="bg-blue shadow-xl text-white p-3 px-6 pt-2 rounded-md mb-12 md:m-b0 hover:shadow-none hover:bg-transparent hover:text-blue hover:border-blue hover:border"
                   >Register</a
                 >
               </div>
@@ -375,7 +374,7 @@
 
               <!-- left arrow button -->
               <div
-                class="flex justify-center items-center rounded-full border w-12 h-12 bg-white text-blue drop-shadow-md border-blue"
+                class="flex justify-center items-center rounded-full border w-12 h-12 bg-white text-blue shadow-xl border-blue"
               >
                 <a href="" class=""><i class="fas fa-chevron-right"></i></a>
               </div>
@@ -389,7 +388,7 @@
               class="p-9 rounded-md bg-gradient-to-r from-red-100 to-blue-100"
             >
               <!-- Card content -->
-              <div class="p-10 bg-white rounded-md drop-shadow-md mb-10">
+              <div class="p-10 bg-white rounded-md shadow-xl mb-10">
                 <!-- Content Head -->
                 <div
                   class="flex flex-col justify-between items-center mb-4 pb-4 border-b lg:flex-row space-y-2"
@@ -441,7 +440,7 @@
               class="p-9 rounded-md bg-gradient-to-r from-red-100 to-blue-100"
             >
               <!-- Card content -->
-              <div class="p-10 bg-white rounded-md drop-shadow-md mb-10">
+              <div class="p-10 bg-white rounded-md shadow-xl mb-10">
                 <!-- Content Head -->
                 <div
                   class="flex flex-col justify-between items-center mb-4 pb-4 border-b lg:flex-row space-y-2"
@@ -550,7 +549,7 @@
               <div class="flex justify-start">
                 <a
                   href="#"
-                  class="bg-blue drop-shadow-md text-white p-3 px-6 pt-2 rounded-md mb-12 md:m-b0"
+                  class="bg-blue shadow-xl text-white p-3 px-6 pt-2 rounded-md mb-12 md:m-b0 hover:shadow-none hover:bg-transparent hover:text-blue hover:border-blue hover:border"
                   >Register</a
                 >
               </div>
@@ -613,7 +612,7 @@
             <div class="flex md:justify-start">
               <a
                 href="#"
-                class="bg-blue-900 font-bold drop-shadow-md text-white p-3 px-6 pt-2 rounded-md mb-12 tracking-wider md:m-b0 lg:text-xl"
+                class="bg-blue-900 font-bold shadow-xl text-white p-3 px-6 pt-2 rounded-md mb-12 tracking-wider md:m-b0 lg:text-xl"
                 >+91 8617514085</a
               >
             </div>
