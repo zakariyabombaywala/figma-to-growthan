@@ -16,34 +16,45 @@
       href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
       rel="stylesheet"
     />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <title>Figma to Growthan</title>
   </head>
-  <body class="font-nunito">
-    <header id="header" class="fixed top-0 inset-x-0">
+  <body>
+    <header id="header" class="fixed top-0 inset-x-0 z-50">
       <!-- Navbar -->
-      <nav id="nav">
+      <div id="nav">
         <!-- Flex Container -->
-        <div class="mx-auto p-6 container flex justify-between items-center">
+        <div class="py-6 container flex justify-between items-center">
           <!-- logo -->
           <div class="max-w-40 lg:max-w-60">
             <a href="home.html"
-              ><img src="image/logo.png" alt="" class="w-full h-auto"
+              ><img src="image/logo.png" alt="logo" class="w-full h-auto"
             /></a>
           </div>
           <!-- Menu Item -->
           <div class="hidden space-x-16 lg:flex">
-            <a href="#" class="text-blue font-semibold hover:text-red">Home</a>
+            <a
+              href="./home.html"
+              class="text-blue font-semibold text-[18px] hover:text-red"
+              >Home</a
+            >
             <a
               href="../public/about.html"
-              class="text-blue font-semibold hover:text-red"
+              class="text-blue font-semibold text-[18px] hover:text-red"
               >About Us</a
             >
             <a
               href="../public/service.html"
-              class="text-blue font-semibold hover:text-red"
+              class="text-blue font-semibold text-[18px] hover:text-red"
               >Services</a
             >
-            <a href="#" class="text-blue font-semibold hover:text-red"
+            <a
+              href="#"
+              class="text-blue font-semibold text-[18px] hover:text-red"
               >Contact Us</a
             >
           </div>
@@ -51,7 +62,7 @@
           <!-- Button -->
           <a
             href="#"
-            class="hidden bg-blue shadow-xl text-white p-3 px-6 pt-2 rounded-md lg:block hover:bg-transparent hover:text-blue hover:border-blue hover:border"
+            class="hidden bg-blue shadow-xl text-white p-3 px-6 pt-2 rounded-md text-[18px] lg:block hover:bg-transparent hover:text-blue hover:border-blue hover:border"
             >Register</a
           >
 
@@ -63,32 +74,48 @@
             <i class="fas fa-bars"></i>
           </button>
         </div>
-        <!-- Mobile Menu -->
 
-        <!-- <div class="md:hidden">
+        <!-- Mobile Menu -->
+        <div class="menu-container lg:hidden">
           <div
             id="menu"
-            class="link hidden flex absolute flex-col items-center self-end py-8 space-y-6 font-bold bg-blue text-white left-6 right-6 shadow-xl sm:w-auto sm:self-center"
+            class="link hidden flex absolute flex-col items-center self-end p-8 space-y-6 font-bold bg-blue text-white left-6 right-6 shadow-xl sm:w-auto sm:self-center"
           >
-            <a href="#" class="scroll-link">Home</a>
-            <a href="#" class="scroll-link">About Us</a>
-            <a href="#" class="scroll-link">Services</a>
-            <a href="#" class="scroll-link">Contact Us</a>
+            <a
+              href="./home.html"
+              class="scroll-link w-full text-center hover:bg-white hover:rounded-lg hover:text-blue hover:shadow-lg text-[18px] py-1"
+              >Home</a
+            >
+            <a
+              href="../public/about.html"
+              class="scroll-link w-full text-center hover:bg-white hover:rounded-lg hover:text-blue hover:shadow-lg text-[18px] py-1"
+              >About Us</a
+            >
+            <a
+              href="#"
+              class="scroll-link w-full text-center hover:bg-white hover:rounded-lg hover:text-blue hover:shadow-lg text-[18px] py-1"
+              >Services</a
+            >
+            <a
+              href="#"
+              class="scroll-link w-full text-center hover:bg-white hover:rounded-lg hover:text-blue hover:shadow-lg text-[18px] py-1"
+              >Contact Us</a
+            >
           </div>
-        </div> -->
-      </nav>
+        </div>
+      </div>
     </header>
 
     <!-- Main -->
     <main>
       <!-- Hero section -->
       <section
-        class="bg-home bg-cover bg-center bg-no-repeat min-h-[700px] h-screen"
+        class="bg-home bg-cover bg-center bg-no-repeat min-h-[800px] h-screen"
       >
         <!-- Flex Container -->
         <div class="container">
           <div
-            class="grid grid-cols-1 items-center md:grid-cols-2 place-items-center justify-center min-h[700px] h-screen pt-24"
+            class="grid grid-cols-1 gap-8 items-center md:grid-cols-2 place-items-center justify-center min-h[700px] h-screen pt-24"
           >
             <!-- Left item -->
             <div class="flex flex-col space-y-12">
@@ -99,38 +126,36 @@
               <div class="flex justify-center md:justify-start">
                 <a
                   href="#"
-                  class="bg-blue shadow-xl text-white p-3 px-6 pt-2 rounded-md md:m-b0 hover:bg-transparent hover:text-blue hover:border-blue hover:border"
+                  class="bg-blue shadow-xl text-white p-3 px-6 pt-2 rounded-md text-[18px] md:m-b0 hover:bg-transparent hover:text-blue hover:border-blue hover:border"
                   >Register</a
                 >
               </div>
             </div>
             <!-- Image -->
             <div class="flex justify-center">
-              <img src="image/hero-icon.png" class="" alt="" />
+              <img src="image/hero-img.png" class="" alt="hero-image" />
             </div>
           </div>
         </div>
       </section>
 
       <!-- Service Section -->
-      <section id="service" class="mt-40">
+      <section id="service" class="pt-40">
         <!-- Flex Container -->
-        <div class="container mx-auto px-6">
+        <div class="container">
           <!-- Section Head -->
           <div class="flex justify-between items-center mb-16">
             <!-- left -->
             <div class="flex space-x-6 items-center">
-              <div class="w-16 md:w-auto">
-                <img src="image/setting-fill-icon.png" class="" alt="" />
+              <div class="">
+                <img src="image/setting-fill-icon.png" class="" alt="icon" />
               </div>
               <div class="flex flex-col">
-                <h5
-                  class="uppercase font-nunitosans text-blue font-bold mb-4 text-xs md:text-base"
-                >
+                <h5 class="uppercase font-nunitosans text-blue font-bold mb-4">
                   <span class="text-red">/ / </span> services
                 </h5>
                 <!-- title -->
-                <h2 class="capitalize text-blue font-bold text-xl md:text-3xl">
+                <h2 class="capitalize text-blue font-bold text-3xl text-[40px]">
                   services we provide
                 </h2>
               </div>
@@ -138,9 +163,11 @@
             <!-- button -->
             <a
               href="#"
-              class="hidden items-center capitalize bg-blue shadow-xl text-white p-4 rounded-md text-sm md:flex hover:bg-transparent hover:text-blue hover:border-blue hover:border"
+              class="hidden items-center capitalize bg-blue shadow-xl text-white p-4 rounded-md text-[18px] md:flex hover:bg-transparent hover:text-blue hover:border-blue hover:border"
               >our services
-              <span><img src="image/arrow-svg.svg" class="ml-4" alt="" /></span>
+              <span
+                ><img src="image/arrow-svg.svg" class="ml-4" alt="button"
+              /></span>
             </a>
           </div>
 
@@ -148,18 +175,18 @@
           <div class="grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-3">
             <!-- Service Card 1 -->
             <div
-              class="flex flex-col items-start p-10 rounded-2xl bg-gradient-to-br from-blue-200 via-red-400 to-red-400"
+              class="flex flex-col items-start space-y-6 p-10 rounded-2xl bg-gradient-to-br from-blue-200 via-red-400 to-red-400"
             >
               <!-- Card Image -->
-              <div class="mb-4 w-24 md:w-28">
-                <img src="image/performance-icon.png" alt="" />
+              <div class="">
+                <img src="image/performance-icon.png" alt="performance-icon" />
               </div>
               <!-- Card title -->
-              <h2 class="text-blue font-bold mb-6 text-xl">
+              <h2 class="text-blue font-bold text-[25px]">
                 Performance Marketing
               </h2>
               <!-- Card content -->
-              <p class="text-blue-900">
+              <p class="text-blue-900 text-[18px]">
                 Get the best results for your marketing campaigns by leveraging
                 data-driven insights and analytics.
               </p>
@@ -167,16 +194,16 @@
 
             <!-- Service Card 2 -->
             <div
-              class="flex flex-col items-start p-10 rounded-2xl bg-gradient-to-br from-blue-200 via-red-400 to-red-400"
+              class="flex flex-col items-start space-y-6 p-10 rounded-2xl bg-gradient-to-br from-blue-200 via-red-400 to-red-400"
             >
               <!-- Card Image -->
-              <div class="mb-4 w-24 md:w-28">
-                <img src="image/mobile-icon.png" alt="" />
+              <div class="">
+                <img src="image/mobile-icon.png" alt="mobile-icon" />
               </div>
               <!-- Card title -->
-              <h2 class="text-blue font-bold mb-6 text-xl">Mobile Marketing</h2>
+              <h2 class="text-blue font-bold text-[25px]">Mobile Marketing</h2>
               <!-- Card content -->
-              <p class="text-blue-900">
+              <p class="text-blue-900 text-[18px]">
                 Reach your target audience wherever they are with
                 mobile-optimized campaigns that drive engagement and
                 conversions.
@@ -185,16 +212,16 @@
 
             <!-- Service Card 3 -->
             <div
-              class="flex flex-col items-start p-10 rounded-2xl bg-gradient-to-br from-blue-200 via-red-400 to-red-400"
+              class="flex flex-col items-start p-10 space-y-6 rounded-2xl bg-gradient-to-br from-blue-200 via-red-400 to-red-400"
             >
               <!-- Card Image -->
-              <div class="mb-4 w-24 md:w-28">
-                <img src="image/email-icon.png" alt="" />
+              <div class="">
+                <img src="image/email-icon.png" alt="email-icon" />
               </div>
               <!-- Card title -->
-              <h2 class="text-blue font-bold mb-6 text-xl">Email Marketing</h2>
+              <h2 class="text-blue font-bold text-[25px]">Email Marketing</h2>
               <!-- Card content -->
-              <p class="text-blue-900">
+              <p class="text-blue-900 text-[18px]">
                 Build stronger relationships with your customers by delivering
                 personalized content straight to their inbox.
               </p>
@@ -202,18 +229,18 @@
 
             <!-- Service Card 4 -->
             <div
-              class="flex flex-col items-start p-10 rounded-2xl bg-gradient-to-br from-blue-200 via-red-400 to-red-400"
+              class="flex flex-col items-start p-10 space-y-6 rounded-2xl bg-gradient-to-br from-blue-200 via-red-400 to-red-400"
             >
               <!-- Card Image -->
-              <div class="mb-4 w-24 md:w-28">
-                <img src="image/media-icon.png" alt="" />
+              <div class="">
+                <img src="image/media-icon.png" alt="media-icon" />
               </div>
               <!-- Card title -->
-              <h2 class="text-blue font-bold mb-6 text-xl">
+              <h2 class="text-blue font-bold text-[25px]">
                 Media Buying & Planning
               </h2>
               <!-- Card content -->
-              <p class="text-blue-900">
+              <p class="text-blue-900 text-[18px]">
                 Maximize your ROI by identifying the right media channels and
                 placements to reach your target audience.
               </p>
@@ -221,18 +248,18 @@
 
             <!-- Service Card 5 -->
             <div
-              class="flex flex-col items-start p-10 rounded-2xl bg-gradient-to-br from-blue-200 via-red-400 to-red-400"
+              class="flex flex-col items-start p-10 space-y-6 rounded-2xl bg-gradient-to-br from-blue-200 via-red-400 to-red-400"
             >
               <!-- Card Image -->
-              <div class="mb-4 w-24 md:w-28">
-                <img src="image/influence-icon.png" alt="" />
+              <div class="">
+                <img src="image/influence-icon.png" alt="influence-icon" />
               </div>
               <!-- Card title -->
-              <h2 class="text-blue font-bold mb-6 text-xl">
+              <h2 class="text-blue font-bold text-[25px]">
                 Influencer Marketing
               </h2>
               <!-- Card content -->
-              <p class="text-blue-900">
+              <p class="text-blue-900 text-[18px]">
                 Amplify your brand's reach and credibility by partnering with
                 influencers who align with your brand values.
               </p>
@@ -240,18 +267,16 @@
 
             <!-- Service Card 6 -->
             <div
-              class="flex flex-col items-start p-10 rounded-2xl bg-gradient-to-br from-blue-200 via-red-400 to-red-400"
+              class="flex flex-col items-start p-10 space-y-6 rounded-2xl bg-gradient-to-br from-blue-200 via-red-400 to-red-400"
             >
               <!-- Card Image -->
-              <div class="mb-4 w-24 md:w-28">
-                <img src="image/content-icon.png" alt="" />
+              <div class="">
+                <img src="image/content-icon.png" alt="content-icon" />
               </div>
               <!-- Card title -->
-              <h2 class="text-blue font-bold mb-6 text-xl">
-                Content Marketing
-              </h2>
+              <h2 class="text-blue font-bold text-[25px]">Content Marketing</h2>
               <!-- Card content -->
-              <p class="text-blue-900">
+              <p class="text-blue-900 text-[18px]">
                 Engage your audience with high-quality and relevant content that
                 educates, entertains, and inspires action.
               </p>
@@ -260,62 +285,96 @@
         </div>
       </section>
 
-      <!-- Why We section -->
-      <section id="why" class="mt-40">
-        <!-- Flex Container -->
-        <div class="container mx-auto px-6">
+      <!-- Brand section -->
+      <section id="brand" class="pt-40">
+        <div class="container">
           <!-- Company  list-->
-          <div class="mb-40">
-            <div class="flex items-center justify-between w-[100%]">
+          <div class="swiper brandSwiper">
+            <div class="swiper-wrapper items-center">
               <img
                 src="image/artmaker-logo.png"
-                class="max-w-36"
+                class="swiper-slide"
                 alt="artmake"
               />
-              <img src="image/neoxam-logo.png" class="max-w-36" alt="neoxam" />
+              <img
+                src="image/neoxam-logo.png"
+                class="swiper-slide"
+                alt="neoxam"
+              />
               <img
                 src="image/utosia-logo.png"
-                class="max-w-36 hidden sm:flex"
+                class="swiper-slide"
                 alt="utosia"
               />
               <img
                 src="image/circle-logo.png"
-                class="max-w-36 hidden lg:flex"
+                class="swiper-slide"
                 alt="circle"
               />
               <img
                 src="image/goldline-logo.png"
-                class="max-w-36 hidden lg:block"
+                class="swiper-slide"
+                alt="goldline"
+              />
+              <img
+                src="image/artmaker-logo.png"
+                class="swiper-slide"
+                alt="artmake"
+              />
+              <img
+                src="image/neoxam-logo.png"
+                class="swiper-slide"
+                alt="neoxam"
+              />
+              <img
+                src="image/utosia-logo.png"
+                class="swiper-slide"
+                alt="utosia"
+              />
+              <img
+                src="image/circle-logo.png"
+                class="swiper-slide"
+                alt="circle"
+              />
+              <img
+                src="image/goldline-logo.png"
+                class="swiper-slide"
                 alt="goldline"
               />
             </div>
           </div>
+        </div>
+      </section>
 
+      <!-- Why We section -->
+      <section id="why" class="pt-40">
+        <!-- Flex Container -->
+        <div class="container">
           <!-- Flex -->
           <div
-            class="flex flex-col-reverse justify-center items-center md:flex-row"
+            class="grid grid-cols-1 gap-4 justify-center items-center md:grid-cols-2"
           >
             <!-- Left -->
-            <div class="md:w-1/3">
+            <div class="">
               <img src="image/why-img.png" alt="image" />
             </div>
 
             <!-- right -->
-            <div class="flex flex-col md:w-1/2">
+            <div class="">
               <!-- Content Header -->
               <div class="flex space-x-6 items-center border-b pb-4 mb-4">
-                <div class="w-16 md:w-auto">
-                  <img src="image/why-icon.png" class="" alt="" />
+                <div class="">
+                  <img src="image/why-icon.png" class="" alt="image" />
                 </div>
                 <div class="flex flex-col">
                   <h5
-                    class="uppercase font-nunitosans text-blue font-bold mb-4 text-xs md:text-base"
+                    class="uppercase font-nunitosans text-blue font-bold mb-4"
                   >
                     <span class="text-red">/ / </span> GET THE BEST
                   </h5>
                   <!-- title -->
                   <h2
-                    class="capitalize text-blue font-bold text-xl md:text-3xl"
+                    class="capitalize text-blue font-bold text-3xl text-[40px]"
                   >
                     Why Growthan?
                   </h2>
@@ -324,7 +383,7 @@
 
               <!-- Content -->
               <div class="mb-6">
-                <p class="text-justify text-blue-900 font-semibold">
+                <p class="text-justify text-blue-900 font-semibold text-[18px]">
                   We at Growthan provide a robust platform for wide range of
                   Performance Marketing Services. We expertise in various models
                   of marketing to suit our clients requirement and generate best
@@ -342,7 +401,7 @@
               <div class="flex justify-start">
                 <a
                   href="#"
-                  class="bg-blue shadow-xl text-white p-3 px-6 pt-2 rounded-md mb-12 md:m-b0 hover:bg-transparent hover:text-blue hover:border-blue hover:border"
+                  class="bg-blue shadow-xl text-white p-3 px-6 pt-2 rounded-md mb-12 text-[18px] md:m-b0 hover:bg-transparent hover:text-blue hover:border-blue hover:border"
                   >Register</a
                 >
               </div>
@@ -352,35 +411,65 @@
       </section>
 
       <!-- How section -->
-      <section id="how" class="mt-40">
+      <section id="how" class="pt-40">
         <!-- Container -->
-        <div class="container mx-auto px-6">
-          <div class="flex justify-center">
-            <img src="image/Proccess-banner.png" alt="" />
+        <div class="container">
+          <div
+            class="bg-gradient-to-br from-blue-200 via-red-400 to-yellow-300 p-10"
+          >
+            <!-- Section Head -->
+            <div class="flex flex-col items-center justify-center space-y-6">
+              <img src="./image/ladder-fill-icon.png" alt="icon" />
+              <h5 class="uppercase font-nunito text-blue font-semibold mb-4">
+                <span class="text-red">/ / </span> Process
+              </h5>
+              <!-- title -->
+              <h2 class="text-blue font-semibold text-3xl md:text-[40px]">
+                How we work
+              </h2>
+            </div>
+
+            <!-- Content -->
+            <!-- col 1 -->
+            <div class="w-[85%] mx-auto">
+              <div
+                class="grid grid-cols-3 gap-16 justify-center place-items-center"
+              >
+                <img src="./image/Graphics-image.png" alt="image" />
+
+                <div
+                  class="md:max-w-[86px] w-full md:max-h-[86px] h-full border-8 rounded-full border-blue-600 bg-white"
+                >
+                  <h3
+                    class="font-semibold text-3xl flex justify-center items-center h-full"
+                  >
+                    1
+                  </h3>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
       <!-- Testimonial section -->
-      <section id="testim" class="mt-40">
+      <section id="testim" class="pt-40">
         <!-- Container -->
-        <div class="container mx-auto px-6">
+        <div class="container pb-20">
           <!-- Section Head -->
           <div class="flex justify-between items-center mb-14">
             <!-- left -->
-            <div class="flex space-x-6 items-center">
-              <div class="w-16 md:w-auto">
-                <img src="image/message-fill-icon.png" class="" alt="" />
+            <div class="flex space-x-6">
+              <div class="">
+                <img src="image/message-fill-icon.png" class="" alt="icon" />
               </div>
               <div class="flex flex-col">
-                <h5
-                  class="uppercase font-nunitosans text-blue font-bold mb-4 text-xs md:text-base"
-                >
+                <h5 class="uppercase font-nunitosans text-blue font-bold mb-4">
                   <span class="text-red">/ / </span> Testimonial
                 </h5>
                 <!-- title -->
                 <h2
-                  class="capitalize text-blue font-bold text-xl max-w-96 md:text-3xl"
+                  class="capitalize text-blue font-bold max-w-[40rem] text-3xl md:text-[40px]"
                 >
                   We work with customers across all industries
                 </h2>
@@ -390,122 +479,414 @@
             <div class="hidden space-x-4 md:flex">
               <!-- left arrow button -->
               <div
-                class="flex justify-center items-center rounded-full border w-12 h-12 bg-blue text-white border-blue"
+                class="testim-prev btn-slide flex justify-center items-center rounded-full border w-[70px] h-[70px] focus:bg-blue focus:text-white focus:shadow-xl border-blue"
               >
                 <a href="" class=""><i class="fas fa-chevron-left"></i></a>
               </div>
 
               <!-- left arrow button -->
               <div
-                class="flex justify-center items-center rounded-full border w-12 h-12 bg-white text-blue shadow-xl border-blue"
+                class="testim-next btn-slide flex justify-center items-center rounded-full border w-[70px] h-[70px] focus:bg-blue focus:text-white focus:shadow-xl border-blue"
               >
                 <a href="" class=""><i class="fas fa-chevron-right"></i></a>
               </div>
             </div>
           </div>
+          <!-- swiper main -->
+          <div class="swiper testimSwiper">
+            <!-- Customer testm Cards -->
 
-          <!-- Customer testm Cards -->
-          <div class="grid grid-cols-1 gap-4 md:grid-cols-2 mb-32">
-            <!-- Card 1 -->
-            <div
-              class="p-9 rounded-md bg-gradient-to-r from-red-100 to-blue-100"
-            >
-              <!-- Card content -->
-              <div class="p-10 bg-white rounded-md shadow-xl mb-10">
-                <!-- Content Head -->
-                <div
-                  class="flex flex-col justify-between items-center mb-4 pb-4 border-b lg:flex-row space-y-2"
-                >
-                  <!-- Company Logo and name -->
-                  <div class="flex items-center">
-                    <img src="image/cmpny-logo-1.png" alt="" />
-                    <h4 class="capitalize font-bold text-blue text-2xl">
-                      company
+            <!-- Swiper wrapper -->
+            <div class="swiper-wrapper mb-12">
+              <!-- Card 1 -->
+              <div
+                class="swiper-slide p-9 rounded-md bg-gradient-to-r from-red-100 to-blue-100"
+              >
+                <!-- Card content -->
+                <div class="p-10 bg-white rounded-md shadow-xl mb-10">
+                  <!-- Content Head -->
+                  <div
+                    class="flex flex-col justify-between items-center mb-4 pb-4 border-b lg:flex-row space-y-2"
+                  >
+                    <!-- Company Logo and name -->
+                    <div class="flex items-center">
+                      <img src="image/cmpny-logo-1.png" alt="brand-logo" />
+                      <h4 class="capitalize font-bold text-blue text-[25px]">
+                        company
+                      </h4>
+                    </div>
+                    <!-- Company ratting -->
+                    <div class="flex space-x-1">
+                      <img src="image/Star.png" alt="ratting" />
+                      <img src="image/Star.png" alt="ratting" />
+                      <img src="image/Star.png" alt="ratting" />
+                      <img src="image/Star.png" alt="ratting" />
+                      <img src="image/Star.png" alt="ratting" />
+                    </div>
+                  </div>
+
+                  <!-- Customer testm desc -->
+                  <div>
+                    <p
+                      class="text-blue mb-4 line-clamp-4 text-[18px] lg:line-clamp-3"
+                    >
+                      Working with growthan.com has been a game-changer for our
+                      business. Their strategies have led to significant growth
+                      and a boost in revenue.
+                    </p>
+                  </div>
+                </div>
+
+                <!-- Card Footer -->
+                <div class="flex space-x-3 items-center">
+                  <!-- Customer detail -->
+                  <div class="">
+                    <!-- Customer profile -->
+                    <img src="image/profile1-icon.png" alt="profile-image" />
+                  </div>
+                  <!-- Customer name position -->
+                  <div>
+                    <h4 class="font-bold text-[20px] text-blue">John Carter</h4>
+                    <h6 class="text-gray text-[18px]">
+                      Marketing Lead at Google
+                    </h6>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Card 2 -->
+              <div
+                class="swiper-slide p-9 rounded-md bg-gradient-to-r from-red-100 to-blue-100"
+              >
+                <!-- Card content -->
+                <div class="p-10 bg-white rounded-md shadow-xl mb-10">
+                  <!-- Content Head -->
+                  <div
+                    class="flex flex-col justify-between items-center mb-4 pb-4 border-b lg:flex-row space-y-2"
+                  >
+                    <!-- Company Logo and name -->
+                    <div class="flex items-center">
+                      <img src="image/cmpny-logo-2.png" alt="brand-logo" />
+                      <h4 class="capitalize font-bold text-blue text-[25px]">
+                        company
+                      </h4>
+                    </div>
+                    <!-- Company ratting -->
+                    <div class="flex space-x-1">
+                      <img src="image/Star.png" alt="ratting" />
+                      <img src="image/Star.png" alt="ratting" />
+                      <img src="image/Star.png" alt="ratting" />
+                      <img src="image/Star.png" alt="ratting" />
+                      <img src="image/Star.png" alt="ratting" />
+                    </div>
+                  </div>
+
+                  <!-- Customer testm desc -->
+                  <div>
+                    <p
+                      class="text-blue mb-4 line-clamp-4 text-[18px] lg:line-clamp-3"
+                    >
+                      I'm extremely impressed with the level of expertise and
+                      dedication that the team at Growthan brings to every
+                      project. They consistently deliver great results.
+                    </p>
+                  </div>
+                </div>
+
+                <!-- Card Footer -->
+                <div class="flex space-x-3 items-center">
+                  <!-- Customer detail -->
+                  <div class="">
+                    <!-- Customer profile -->
+                    <img src="image/profile2-icon.png" alt="profile-image" />
+                  </div>
+                  <!-- Customer name position -->
+                  <div>
+                    <h4 class="font-bold text-xl text-blue text-[20px]">
+                      Peeter pawl
                     </h4>
+                    <h6 class="text-gray text-[18px]">Designer</h6>
                   </div>
-                  <!-- Company ratting -->
-                  <div class="flex space-x-1">
-                    <img src="image/Star.png" alt="" />
-                    <img src="image/Star.png" alt="" />
-                    <img src="image/Star.png" alt="" />
-                    <img src="image/Star.png" alt="" />
-                    <img src="image/Star.png" alt="" />
-                  </div>
-                </div>
-
-                <!-- Customer testm desc -->
-                <div>
-                  <p class="text-blue mb-4 line-clamp-4 lg:line-clamp-3">
-                    Working with growthan.com has been a game-changer for our
-                    business. Their strategies have led to significant growth
-                    and a boost in revenue.
-                  </p>
                 </div>
               </div>
 
-              <!-- Card Footer -->
-              <div class="flex space-x-3 items-center">
-                <!-- Customer detail -->
-                <div class="">
-                  <!-- Customer profile -->
-                  <img src="image/profile1-icon.png" alt="" />
+              <!-- Card 3 -->
+              <div
+                class="swiper-slide p-9 rounded-md bg-gradient-to-r from-red-100 to-blue-100"
+              >
+                <!-- Card content -->
+                <div class="p-10 bg-white rounded-md shadow-xl mb-10">
+                  <!-- Content Head -->
+                  <div
+                    class="flex flex-col justify-between items-center mb-4 pb-4 border-b lg:flex-row space-y-2"
+                  >
+                    <!-- Company Logo and name -->
+                    <div class="flex items-center">
+                      <img src="image/cmpny-logo-1.png" alt="brand-logo" />
+                      <h4 class="capitalize font-bold text-blue text-[25px]">
+                        company
+                      </h4>
+                    </div>
+                    <!-- Company ratting -->
+                    <div class="flex space-x-1">
+                      <img src="image/Star.png" alt="ratting" />
+                      <img src="image/Star.png" alt="ratting" />
+                      <img src="image/Star.png" alt="ratting" />
+                      <img src="image/Star.png" alt="ratting" />
+                      <img src="image/Star.png" alt="ratting" />
+                    </div>
+                  </div>
+
+                  <!-- Customer testm desc -->
+                  <div>
+                    <p
+                      class="text-blue mb-4 line-clamp-4 text-[18px] lg:line-clamp-3"
+                    >
+                      Working with growthan.com has been a game-changer for our
+                      business. Their strategies have led to significant growth
+                      and a boost in revenue.
+                    </p>
+                  </div>
                 </div>
-                <!-- Customer name position -->
-                <div>
-                  <h4 class="font-bold text-xl text-blue">John Carter</h4>
-                  <h6 class="text-gray">Marketing Lead at Google</h6>
+
+                <!-- Card Footer -->
+                <div class="flex space-x-3 items-center">
+                  <!-- Customer detail -->
+                  <div class="">
+                    <!-- Customer profile -->
+                    <img src="image/profile1-icon.png" alt="profile-image" />
+                  </div>
+                  <!-- Customer name position -->
+                  <div>
+                    <h4 class="font-bold text-[20px] text-blue">John Carter</h4>
+                    <h6 class="text-gray text-[18px]">
+                      Marketing Lead at Google
+                    </h6>
+                  </div>
                 </div>
               </div>
-            </div>
 
-            <!-- Card 2 -->
-            <div
-              class="p-9 rounded-md bg-gradient-to-r from-red-100 to-blue-100"
-            >
-              <!-- Card content -->
-              <div class="p-10 bg-white rounded-md shadow-xl mb-10">
-                <!-- Content Head -->
-                <div
-                  class="flex flex-col justify-between items-center mb-4 pb-4 border-b lg:flex-row space-y-2"
-                >
-                  <!-- Company Logo and name -->
-                  <div class="flex items-center">
-                    <img src="image/cmpny-logo-2.png" alt="" />
-                    <h4 class="capitalize font-bold text-blue text-2xl">
-                      company
+              <!-- Card 4 -->
+              <div
+                class="swiper-slide p-9 rounded-md bg-gradient-to-r from-red-100 to-blue-100"
+              >
+                <!-- Card content -->
+                <div class="p-10 bg-white rounded-md shadow-xl mb-10">
+                  <!-- Content Head -->
+                  <div
+                    class="flex flex-col justify-between items-center mb-4 pb-4 border-b lg:flex-row space-y-2"
+                  >
+                    <!-- Company Logo and name -->
+                    <div class="flex items-center">
+                      <img src="image/cmpny-logo-2.png" alt="brand-logo" />
+                      <h4 class="capitalize font-bold text-blue text-[25px]">
+                        company
+                      </h4>
+                    </div>
+                    <!-- Company ratting -->
+                    <div class="flex space-x-1">
+                      <img src="image/Star.png" alt="ratting" />
+                      <img src="image/Star.png" alt="ratting" />
+                      <img src="image/Star.png" alt="ratting" />
+                      <img src="image/Star.png" alt="ratting" />
+                      <img src="image/Star.png" alt="ratting" />
+                    </div>
+                  </div>
+
+                  <!-- Customer testm desc -->
+                  <div>
+                    <p
+                      class="text-blue mb-4 line-clamp-4 text-[18px] lg:line-clamp-3"
+                    >
+                      I'm extremely impressed with the level of expertise and
+                      dedication that the team at Growthan brings to every
+                      project. They consistently deliver great results.
+                    </p>
+                  </div>
+                </div>
+
+                <!-- Card Footer -->
+                <div class="flex space-x-3 items-center">
+                  <!-- Customer detail -->
+                  <div class="">
+                    <!-- Customer profile -->
+                    <img src="image/profile2-icon.png" alt="profile-image" />
+                  </div>
+                  <!-- Customer name position -->
+                  <div>
+                    <h4 class="font-bold text-xl text-blue text-[20px]">
+                      Peeter pawl
                     </h4>
+                    <h6 class="text-gray text-[18px]">Designer</h6>
                   </div>
-                  <!-- Company ratting -->
-                  <div class="flex space-x-1">
-                    <img src="image/Star.png" alt="" />
-                    <img src="image/Star.png" alt="" />
-                    <img src="image/Star.png" alt="" />
-                    <img src="image/Star.png" alt="" />
-                    <img src="image/Star.png" alt="" />
-                  </div>
-                </div>
-
-                <!-- Customer testm desc -->
-                <div>
-                  <p class="text-blue mb-4 line-clamp-4 lg:line-clamp-3">
-                    I'm extremely impressed with the level of expertise and
-                    dedication that the team at Growthan brings to every
-                    project. They consistently deliver great results.
-                  </p>
                 </div>
               </div>
 
-              <!-- Card Footer -->
-              <div class="flex space-x-3 items-center">
-                <!-- Customer detail -->
-                <div class="">
-                  <!-- Customer profile -->
-                  <img src="image/profile2-icon.png" alt="" />
+              <!-- Card 5 -->
+              <div
+                class="swiper-slide p-9 rounded-md bg-gradient-to-r from-red-100 to-blue-100"
+              >
+                <!-- Card content -->
+                <div class="p-10 bg-white rounded-md shadow-xl mb-10">
+                  <!-- Content Head -->
+                  <div
+                    class="flex flex-col justify-between items-center mb-4 pb-4 border-b lg:flex-row space-y-2"
+                  >
+                    <!-- Company Logo and name -->
+                    <div class="flex items-center">
+                      <img src="image/cmpny-logo-1.png" alt="brand-logo" />
+                      <h4 class="capitalize font-bold text-blue text-[25px]">
+                        company
+                      </h4>
+                    </div>
+                    <!-- Company ratting -->
+                    <div class="flex space-x-1">
+                      <img src="image/Star.png" alt="ratting" />
+                      <img src="image/Star.png" alt="ratting" />
+                      <img src="image/Star.png" alt="ratting" />
+                      <img src="image/Star.png" alt="ratting" />
+                      <img src="image/Star.png" alt="ratting" />
+                    </div>
+                  </div>
+
+                  <!-- Customer testm desc -->
+                  <div>
+                    <p
+                      class="text-blue mb-4 line-clamp-4 text-[18px] lg:line-clamp-3"
+                    >
+                      Working with growthan.com has been a game-changer for our
+                      business. Their strategies have led to significant growth
+                      and a boost in revenue.
+                    </p>
+                  </div>
                 </div>
-                <!-- Customer name position -->
-                <div>
-                  <h4 class="font-bold text-xl text-blue">Peeter pawl</h4>
-                  <h6 class="text-gray">Designer</h6>
+
+                <!-- Card Footer -->
+                <div class="flex space-x-3 items-center">
+                  <!-- Customer detail -->
+                  <div class="">
+                    <!-- Customer profile -->
+                    <img src="image/profile1-icon.png" alt="profile-image" />
+                  </div>
+                  <!-- Customer name position -->
+                  <div>
+                    <h4 class="font-bold text-[20px] text-blue">John Carter</h4>
+                    <h6 class="text-gray text-[18px]">
+                      Marketing Lead at Google
+                    </h6>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Card 6 -->
+              <div
+                class="swiper-slide p-9 rounded-md bg-gradient-to-r from-red-100 to-blue-100"
+              >
+                <!-- Card content -->
+                <div class="p-10 bg-white rounded-md shadow-xl mb-10">
+                  <!-- Content Head -->
+                  <div
+                    class="flex flex-col justify-between items-center mb-4 pb-4 border-b lg:flex-row space-y-2"
+                  >
+                    <!-- Company Logo and name -->
+                    <div class="flex items-center">
+                      <img src="image/cmpny-logo-2.png" alt="brand-logo" />
+                      <h4 class="capitalize font-bold text-blue text-[25px]">
+                        company
+                      </h4>
+                    </div>
+                    <!-- Company ratting -->
+                    <div class="flex space-x-1">
+                      <img src="image/Star.png" alt="ratting" />
+                      <img src="image/Star.png" alt="ratting" />
+                      <img src="image/Star.png" alt="ratting" />
+                      <img src="image/Star.png" alt="ratting" />
+                      <img src="image/Star.png" alt="ratting" />
+                    </div>
+                  </div>
+
+                  <!-- Customer testm desc -->
+                  <div>
+                    <p
+                      class="text-blue mb-4 line-clamp-4 text-[18px] lg:line-clamp-3"
+                    >
+                      I'm extremely impressed with the level of expertise and
+                      dedication that the team at Growthan brings to every
+                      project. They consistently deliver great results.
+                    </p>
+                  </div>
+                </div>
+
+                <!-- Card Footer -->
+                <div class="flex space-x-3 items-center">
+                  <!-- Customer detail -->
+                  <div class="">
+                    <!-- Customer profile -->
+                    <img src="image/profile2-icon.png" alt="profile-image" />
+                  </div>
+                  <!-- Customer name position -->
+                  <div>
+                    <h4 class="font-bold text-xl text-blue text-[20px]">
+                      Peeter pawl
+                    </h4>
+                    <h6 class="text-gray text-[18px]">Designer</h6>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Card 7 -->
+              <div
+                class="swiper-slide p-9 rounded-md bg-gradient-to-r from-red-100 to-blue-100"
+              >
+                <!-- Card content -->
+                <div class="p-10 bg-white rounded-md shadow-xl mb-10">
+                  <!-- Content Head -->
+                  <div
+                    class="flex flex-col justify-between items-center mb-4 pb-4 border-b lg:flex-row space-y-2"
+                  >
+                    <!-- Company Logo and name -->
+                    <div class="flex items-center">
+                      <img src="image/cmpny-logo-1.png" alt="brand-logo" />
+                      <h4 class="capitalize font-bold text-blue text-[25px]">
+                        company
+                      </h4>
+                    </div>
+                    <!-- Company ratting -->
+                    <div class="flex space-x-1">
+                      <img src="image/Star.png" alt="ratting" />
+                      <img src="image/Star.png" alt="ratting" />
+                      <img src="image/Star.png" alt="ratting" />
+                      <img src="image/Star.png" alt="ratting" />
+                      <img src="image/Star.png" alt="ratting" />
+                    </div>
+                  </div>
+
+                  <!-- Customer testm desc -->
+                  <div>
+                    <p
+                      class="text-blue mb-4 line-clamp-4 text-[18px] lg:line-clamp-3"
+                    >
+                      Working with growthan.com has been a game-changer for our
+                      business. Their strategies have led to significant growth
+                      and a boost in revenue.
+                    </p>
+                  </div>
+                </div>
+
+                <!-- Card Footer -->
+                <div class="flex space-x-3 items-center">
+                  <!-- Customer detail -->
+                  <div class="">
+                    <!-- Customer profile -->
+                    <img src="image/profile1-icon.png" alt="profile-image" />
+                  </div>
+                  <!-- Customer name position -->
+                  <div>
+                    <h4 class="font-bold text-[20px] text-blue">John Carter</h4>
+                    <h6 class="text-gray text-[18px]">
+                      Marketing Lead at Google
+                    </h6>
+                  </div>
                 </div>
               </div>
             </div>
@@ -513,40 +894,75 @@
         </div>
 
         <!-- Customers tstm number -->
-        <div>
-          <img src="image/testimonial-banner.png" alt="" />
+        <div class="bg-testimonial mih-h-[500px] bg-cover bg-no-repeat p-32">
+          <div class="container">
+            <div
+              class="grid grid-cols-1 space-y-4 lg:grid-cols-2 place-items-center"
+            >
+              <!-- col 1 -->
+              <div class="flex space-x-4 items-center">
+                <h3 class="text-[50px] font-semibold text-white">
+                  100<span class="text-blue-700">+</span>
+                </h3>
+                <p class="uppercase text-[18px] text-white">happy clients</p>
+              </div>
+              <!-- col 2 -->
+              <div class="flex space-x-4 items-center">
+                <h3 class="text-[50px] font-semibold text-white">
+                  500<span class="text-red-700">+</span>
+                </h3>
+                <p class="uppercase text-[18px] text-white">PUBLISHERS</p>
+              </div>
+              <!-- col 3 -->
+              <div class="flex space-x-4 items-center">
+                <h3 class="text-[50px] font-semibold text-white">
+                  25,000<span class="text-yellow-700">+</span>
+                </h3>
+                <p class="uppercase text-[18px] text-white">
+                  DAILY CONVERSIONS
+                </p>
+              </div>
+              <!-- col 4 -->
+              <div class="flex space-x-4 items-center">
+                <h3 class="text-[50px] font-semibold text-white">
+                  150<span class="text-green-700">+</span>
+                </h3>
+                <p class="uppercase text-[18px] text-white">
+                  CAMPAIGNS DELIVERED
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
       <!-- Offer section -->
-      <section id="offer" class="mt-40">
+      <section id="offer" class="pt-40 pb-20">
         <!-- Container -->
-        <div class="container mx-auto px-6">
+        <div class="container">
           <!-- Flex -->
-          <div
-            class="flex flex-col-reverse justify-center items-center md:flex-row"
-          >
+          <div class="grid grid-cols-1 lg:grid-cols-2">
             <!-- Left -->
-            <div class="md:w-1/3">
+            <div class="">
               <img src="image/offer-icon.png" alt="image" />
             </div>
 
             <!-- right -->
-            <div class="flex flex-col md:w-1/2">
+            <div class="flex flex-col">
               <!-- Content Header -->
-              <div class="flex space-x-6 items-center border-b pb-4 mb-4">
-                <div class="w-16 md:w-auto">
-                  <img src="image/star-fill-icon.png" class="" alt="" />
+              <div class="flex space-x-6 border-b pb-4 mb-4">
+                <div class="">
+                  <img src="image/star-fill-icon.png" class="" alt="icon" />
                 </div>
                 <div class="flex flex-col">
                   <h5
-                    class="uppercase font-nunitosans text-blue font-bold mb-4 text-xs md:text-base"
+                    class="uppercase font-nunitosans text-blue font-bold mb-4"
                   >
                     <span class="text-red">/ / </span> GET THE BEST
                   </h5>
                   <!-- title -->
                   <h2
-                    class="capitalize text-blue font-bold text-xl md:text-3xl"
+                    class="capitalize text-blue font-bold text-3xl md:text-[40px]"
                   >
                     We Offer Reliable Solution To Increase Brand Visibility
                   </h2>
@@ -555,7 +971,7 @@
 
               <!-- Content -->
               <div class="mb-6">
-                <p class="text-justify text-blue-900 font-semibold">
+                <p class="text-justify text-blue-900 font-semibold text-[18px]">
                   We help brands to advertise on Web & Mobile medium. We help
                   brands to select best medium with optimum module in order to
                   maximize their ROI. Our experienced Media Buying & Planning
@@ -572,7 +988,7 @@
               <div class="flex justify-start">
                 <a
                   href="#"
-                  class="bg-blue shadow-xl text-white p-3 px-6 pt-2 rounded-md mb-12 md:m-b0 hover:bg-transparent hover:text-blue hover:border-blue hover:border"
+                  class="bg-blue shadow-xl text-white p-3 px-6 pt-2 rounded-md mb-12 text-[18px] md:m-b0 hover:bg-transparent hover:text-blue hover:border-blue hover:border"
                   >Register</a
                 >
               </div>
@@ -583,7 +999,7 @@
     </main>
 
     <!-- Footer -->
-    <footer id="footer" class="bg-blue mt-10">
+    <footer id="footer" class="bg-blue pt-10">
       <!-- Container -->
       <div class="container mx-auto px-6 pt-20 text-white">
         <!-- Footer Links container -->
@@ -591,56 +1007,84 @@
           <!-- Page link -->
           <div class="space-y-8">
             <!-- Link title -->
-            <h4 class="text-xl font-semibold tracking-wider">Pages</h4>
+            <h4 class="text-xl font-semibold tracking-wider text-[25px]">
+              Pages
+            </h4>
             <ul class="space-y-2">
-              <li><a href="" class="tracking-wider">Home</a></li>
-              <li><a href="" class="tracking-wider">Service</a></li>
-              <li><a href="" class="tracking-wider">About</a></li>
-              <li><a href="" class="tracking-wider">Contact</a></li>
+              <li>
+                <a href="/public/home.html" class="tracking-wider text-[18px]"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/public/service.html"
+                  class="tracking-wider text-[18px]"
+                  >Service</a
+                >
+              </li>
+              <li>
+                <a href="/public/about.html" class="tracking-wider text-[18px]"
+                  >About</a
+                >
+              </li>
+              <li><a href="" class="tracking-wider text-[18px]">Contact</a></li>
             </ul>
           </div>
           <!-- Social link -->
           <div class="space-y-8">
             <!-- Link title -->
-            <h4 class="text-xl font-semibold tracking-wider">Social Logins</h4>
+            <h4 class="text-xl font-semibold tracking-wider text-[25px]">
+              Social Logins
+            </h4>
             <ul class="space-y-2">
-              <li><a href="" class="tracking-wider">Facebook</a></li>
-              <li><a href="" class="tracking-wider">Twitter</a></li>
-              <li><a href="" class="tracking-wider">Instagram</a></li>
-              <li><a href="" class="tracking-wider">Skype</a></li>
+              <li>
+                <a href="" class="tracking-wider text-[18px]">Facebook</a>
+              </li>
+              <li><a href="" class="tracking-wider text-[18px]">Twitter</a></li>
+              <li>
+                <a href="" class="tracking-wider text-[18px]">Instagram</a>
+              </li>
+              <li><a href="" class="tracking-wider text-[18px]">Skype</a></li>
             </ul>
           </div>
           <!-- Location link -->
           <div class="space-y-8">
             <!-- Link title -->
-            <h4 class="text-xl font-semibold tracking-wider">Location</h4>
+            <h4 class="text-xl font-semibold tracking-wider text-[25px]">
+              Location
+            </h4>
             <ul class="space-y-2">
               <li>
-                <a href="" class="underline max-w-80 block tracking-wider"
+                <a
+                  href=""
+                  class="underline max-w-80 block tracking-wider text-[18px]"
                   >UNIT NO. 147, FIRST FLOOR, JMD MEGAPOLIS, Badshahpur Sohna Rd
                   Hwy, Sector 48, Gurugram, Haryana 122018 .</a
                 >
               </li>
               <li>
-                <a href="" class="underline tracking-wider">Location Map</a>
+                <a href="" class="underline tracking-wider text-[18px]"
+                  >Location Map</a
+                >
               </li>
             </ul>
           </div>
           <!-- Contact link -->
           <div class="space-y-8">
             <!-- Link title -->
-            <h4 class="text-xl font-semibold tracking-wider">
+            <h4 class="text-xl font-semibold tracking-wider text-[25px]">
               Get in touch with
             </h4>
             <div class="flex md:justify-start">
               <a
                 href="#"
-                class="bg-blue-900 font-bold shadow-xl text-white p-3 px-6 pt-2 rounded-md mb-12 tracking-wider md:m-b0 lg:text-xl"
+                class="bg-blue-900 font-bold shadow-xl text-white p-3 px-6 pt-2 rounded-md mb-12 tracking-wider text-[18px] md:m-b0 lg:text-xl"
                 >+91 8617514085</a
               >
             </div>
             <!-- email -->
-            <a href="#" class="underline tracking-wider"
+            <a href="#" class="underline tracking-wider text-[18px]"
               >business@growthan.com</a
             >
           </div>
@@ -648,12 +1092,16 @@
 
         <!-- Copyright text -->
         <div class="border-t py-4">
-          <p class="text-center tracking-wider">
+          <p class="text-center tracking-wider text-[18px]">
             Copyright &copy; 2023 | Growthan | All rights reserved.
           </p>
         </div>
       </div>
     </footer>
+
+    <!-- Swiper slider -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
     <!-- javascript -->
     <script src="js/main.js"></script>
   </body>

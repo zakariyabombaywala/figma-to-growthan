@@ -19,35 +19,37 @@
     <title>About Us</title>
   </head>
   <body class="font-nunito">
-    <header class="fixed top-0 inset-x-0">
+    <header id="header" class="fixed top-0 inset-x-0 z-50">
       <!-- Navbar -->
       <nav id="nav">
         <!-- Flex Container -->
-        <div
-          class="mx-auto p-6 container flex justify-between items-start md:items-baseline"
-        >
+        <div class="py-6 container flex justify-between items-center">
           <!-- logo -->
-          <div class="w-36">
-            <a href="#"
-              ><img src="image/logo.png" alt="" class="w-auto h-auto"
+          <div class="max-w-40 lg:max-w-60">
+            <a href="home.html"
+              ><img src="image/logo.png" alt="" class="w-full h-auto"
             /></a>
           </div>
           <!-- Menu Item -->
-          <div class="hidden space-x-12 md:flex">
+          <div class="hidden space-x-16 lg:flex">
             <a
               href="../public/home.html"
-              class="text-blue font-semibold hover:text-red"
+              class="text-blue font-semibold text-[18px] hover:text-red"
               >Home</a
             >
-            <a href="about.html" class="text-blue font-semibold hover:text-red"
+            <a
+              href="./about.html"
+              class="text-blue font-semibold text-[18px] hover:text-red"
               >About Us</a
             >
             <a
               href="../public/service.html"
-              class="text-blue font-semibold hover:text-red"
+              class="text-blue font-semibold text-[18px] hover:text-red"
               >Services</a
             >
-            <a href="#" class="text-blue font-semibold hover:text-red"
+            <a
+              href="#"
+              class="text-blue font-semibold text-[18px] hover:text-red"
               >Contact Us</a
             >
           </div>
@@ -55,17 +57,46 @@
           <!-- Button -->
           <a
             href="#"
-            class="hidden bg-blue drop-shadow-md text-white p-3 px-6 pt-2 rounded-md hover:bg-transparent hover:text-blue hover:border-blue hover:border md:block"
+            class="hidden bg-blue shadow-xl text-white p-3 px-6 pt-2 rounded-md text-[18px] lg:block hover:bg-transparent hover:text-blue hover:border-blue hover:border"
             >Register</a
           >
 
           <!-- Hamburger Icon -->
           <button
             id="menu-btn"
-            class="hamburger items-center p-2 text-2xl flex justify-center md:hidden focus:outline-none hover:rotate-90 transition-all"
+            class="hamburger items-center p-2 text-2xl flex justify-center lg:hidden focus:outline-none hover:rotate-90 transition-all"
           >
             <i class="fas fa-bars"></i>
           </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="lg:hidden">
+          <div
+            id="menu"
+            class="link hidden flex absolute flex-col items-center self-end p-8 space-y-6 font-bold bg-blue text-white left-6 right-6 shadow-xl sm:w-auto sm:self-center"
+          >
+            <a
+              href="../public/home.html"
+              class="scroll-link w-full text-center hover:bg-white hover:rounded-lg hover:text-blue hover:shadow-lg text-[18px] py-1"
+              >Home</a
+            >
+            <a
+              href="./about.html"
+              class="scroll-link w-full text-center hover:bg-white hover:rounded-lg hover:text-blue hover:shadow-lg text-[18px] py-1"
+              >About Us</a
+            >
+            <a
+              href="../public/service.html"
+              class="scroll-link w-full text-center hover:bg-white hover:rounded-lg hover:text-blue hover:shadow-lg text-[18px] py-1"
+              >Services</a
+            >
+            <a
+              href="#"
+              class="scroll-link w-full text-center hover:bg-white hover:rounded-lg hover:text-blue hover:shadow-lg text-[18px] py-1"
+              >Contact Us</a
+            >
+          </div>
         </div>
       </nav>
     </header>
@@ -75,8 +106,8 @@
       <section
         class="bg-about bg-cover bg-center bg-no-repeat min-h-[300px] max-h-[605px] h-full"
       >
-        <div class="flex justify-center pt-96 pb-40">
-          <h1 class="capitalize text-5xl text-blue font-extrabold">
+        <div class="flex justify-center pt-[21rem] pb-28">
+          <h1 class="capitalize text-[70px] text-blue font-extrabold">
             About <span class="text-red"> us</span>
           </h1>
         </div>
@@ -84,26 +115,63 @@
 
       <!-- Testimonial banner  -->
       <section id="testim">
-        <img src="image/testimonial-banner.png" alt="" />
+        <div class="bg-testimonial mih-h-[500px] bg-cover bg-no-repeat p-32">
+          <div class="container">
+            <div
+              class="grid grid-cols-1 space-y-4 lg:grid-cols-2 place-items-center"
+            >
+              <!-- col 1 -->
+              <div class="flex space-x-4 items-center">
+                <h3 class="text-[50px] font-semibold text-white">
+                  100<span class="text-blue-700">+</span>
+                </h3>
+                <p class="uppercase text-[18px] text-white">happy clients</p>
+              </div>
+              <!-- col 2 -->
+              <div class="flex space-x-4 items-center">
+                <h3 class="text-[50px] font-semibold text-white">
+                  500<span class="text-red-700">+</span>
+                </h3>
+                <p class="uppercase text-[18px] text-white">PUBLISHERS</p>
+              </div>
+              <!-- col 3 -->
+              <div class="flex space-x-4 items-center">
+                <h3 class="text-[50px] font-semibold text-white">
+                  25,000<span class="text-yellow-700">+</span>
+                </h3>
+                <p class="uppercase text-[18px] text-white">
+                  DAILY CONVERSIONS
+                </p>
+              </div>
+              <!-- col 4 -->
+              <div class="flex space-x-4 items-center">
+                <h3 class="text-[50px] font-semibold text-white">
+                  150<span class="text-green-700">+</span>
+                </h3>
+                <p class="uppercase text-[18px] text-white">
+                  CAMPAIGNS DELIVERED
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
 
       <!-- About Us  -->
-      <section id="about" class="mt-20 md:mt-40">
-        <div class="container mx-auto px-6">
+      <section id="about" class="pt-20 md:pt-40 pb-20">
+        <div class="container">
           <!-- Flex -->
-          <div
-            class="flex flex-col-reverse justify-center items-center md:flex-row"
-          >
+          <div class="flex flex-col justify-center items-center md:flex-row">
             <!-- Left -->
-            <div class="md:w-1/3">
+            <div class="w-1/3">
               <img src="image/about-icon.png" alt="image" />
             </div>
 
             <!-- right -->
-            <div class="flex flex-col md:w-1/2">
+            <div class="flex flex-col justify-center w-1/2">
               <!-- Content Header -->
-              <div class="flex space-x-6 items-center border-b pb-4 mb-4">
-                <div class="w-16 md:w-auto">
+              <div class="flex space-x-6 border-b pb-10 mb-4">
+                <div class="min-w-[88px] md:w-auto">
                   <img src="image/why-icon.png" class="" alt="" />
                 </div>
                 <div class="flex flex-col">
@@ -114,7 +182,7 @@
                   </h5>
                   <!-- title -->
                   <h2
-                    class="capitalize text-blue font-semibold text-xl md:text-3xl"
+                    class="capitalize text-blue font-semibold leading-10 text-3xl md:text-[40px]"
                   >
                     The #1 digital marketing services company
                   </h2>
@@ -123,7 +191,7 @@
 
               <!-- Content -->
               <div class="mb-6">
-                <p class="text-justify text-blue-900">
+                <p class="text-justify text-blue-900 text-[18px]">
                   At growthan.com, we are passionate about helping businesses
                   succeed through data-driven marketing strategies. With a focus
                   on performance, we work closely with our clients to develop
@@ -140,7 +208,7 @@
               <div class="flex justify-start">
                 <a
                   href="#"
-                  class="capitalize border border-blue shadow-md text-blue font-semibold p-3 px-6 pt-2 rounded-md mb-12 md:m-b0 hover:bg-blue hover:text-white"
+                  class="capitalize border border-blue shadow-md text-blue font-semibold p-3 px-6 pt-2 rounded-md text-[18px] hover:bg-blue hover:text-white"
                   >Get in touch</a
                 >
               </div>
@@ -150,25 +218,23 @@
       </section>
 
       <!-- Value section -->
-      <section id="value" class="mt-20 md:mt-10">
+      <section id="value" class="pt-20 md:pt-10">
         <!-- Container -->
-        <div class="container mx-auto px-6">
+        <div class="container">
           <!-- Value Head -->
           <div
             class="flex flex-col justify-center items-center pb-4 mb-4 space-y-6"
           >
-            <div class="w-16 md:w-auto">
+            <div class="min-w-[88px] md:w-auto">
               <img src="image/right-fill-icon.png" class="" alt="" />
             </div>
             <div class="flex flex-col justify-center items-center">
-              <h5
-                class="uppercase font-nunito text-blue font-semibold mb-4 text-xs md:text-base"
-              >
+              <h5 class="uppercase font-nunito text-blue font-semibold mb-4">
                 <span class="text-red">/ / </span> our values
               </h5>
               <!-- title -->
               <h2
-                class="capitalize text-blue font-semibold text-xl md:text-3xl"
+                class="capitalize text-blue font-semibold text-3xl md:text-[40px]"
               >
                 The core values behind our work
               </h2>
@@ -385,7 +451,7 @@
     </main>
 
     <!-- Footer -->
-    <footer id="footer" class="bg-blue mt-10">
+    <footer id="footer" class="bg-blue pt-10">
       <!-- Container -->
       <div class="container mx-auto px-6 pt-20 text-white">
         <!-- Footer Links container -->
@@ -393,56 +459,84 @@
           <!-- Page link -->
           <div class="space-y-8">
             <!-- Link title -->
-            <h4 class="text-xl font-semibold tracking-wider">Pages</h4>
+            <h4 class="text-xl font-semibold tracking-wider text-[25px]">
+              Pages
+            </h4>
             <ul class="space-y-2">
-              <li><a href="" class="tracking-wider">Home</a></li>
-              <li><a href="" class="tracking-wider">Service</a></li>
-              <li><a href="" class="tracking-wider">About</a></li>
-              <li><a href="" class="tracking-wider">Contact</a></li>
+              <li>
+                <a href="../public/home.html" class="tracking-wider text-[18px]"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="../public/service.html"
+                  class="tracking-wider text-[18px]"
+                  >Service</a
+                >
+              </li>
+              <li>
+                <a href="/public/about.html" class="tracking-wider text-[18px]"
+                  >About</a
+                >
+              </li>
+              <li><a href="" class="tracking-wider text-[18px]">Contact</a></li>
             </ul>
           </div>
           <!-- Social link -->
           <div class="space-y-8">
             <!-- Link title -->
-            <h4 class="text-xl font-semibold tracking-wider">Social Logins</h4>
+            <h4 class="text-xl font-semibold tracking-wider text-[25px]">
+              Social Logins
+            </h4>
             <ul class="space-y-2">
-              <li><a href="" class="tracking-wider">Facebook</a></li>
-              <li><a href="" class="tracking-wider">Twitter</a></li>
-              <li><a href="" class="tracking-wider">Instagram</a></li>
-              <li><a href="" class="tracking-wider">Skype</a></li>
+              <li>
+                <a href="" class="tracking-wider text-[18px]">Facebook</a>
+              </li>
+              <li><a href="" class="tracking-wider text-[18px]">Twitter</a></li>
+              <li>
+                <a href="" class="tracking-wider text-[18px]">Instagram</a>
+              </li>
+              <li><a href="" class="tracking-wider text-[18px]">Skype</a></li>
             </ul>
           </div>
           <!-- Location link -->
           <div class="space-y-8">
             <!-- Link title -->
-            <h4 class="text-xl font-semibold tracking-wider">Location</h4>
+            <h4 class="text-xl font-semibold tracking-wider text-[25px]">
+              Location
+            </h4>
             <ul class="space-y-2">
               <li>
-                <a href="" class="underline max-w-80 block tracking-wider"
+                <a
+                  href=""
+                  class="underline max-w-80 block tracking-wider text-[18px]"
                   >UNIT NO. 147, FIRST FLOOR, JMD MEGAPOLIS, Badshahpur Sohna Rd
                   Hwy, Sector 48, Gurugram, Haryana 122018 .</a
                 >
               </li>
               <li>
-                <a href="" class="underline tracking-wider">Location Map</a>
+                <a href="" class="underline tracking-wider text-[18px]"
+                  >Location Map</a
+                >
               </li>
             </ul>
           </div>
           <!-- Contact link -->
           <div class="space-y-8">
             <!-- Link title -->
-            <h4 class="text-xl font-semibold tracking-wider">
+            <h4 class="text-xl font-semibold tracking-wider text-[25px]">
               Get in touch with
             </h4>
             <div class="flex md:justify-start">
               <a
                 href="#"
-                class="bg-blue-900 font-bold shadow-xl text-white p-3 px-6 pt-2 rounded-md mb-12 tracking-wider md:m-b0 lg:text-xl"
+                class="bg-blue-900 font-bold shadow-xl text-white p-3 px-6 pt-2 rounded-md mb-12 tracking-wider text-[18px] md:m-b0 lg:text-xl"
                 >+91 8617514085</a
               >
             </div>
             <!-- email -->
-            <a href="#" class="underline tracking-wider"
+            <a href="#" class="underline tracking-wider text-[18px]"
               >business@growthan.com</a
             >
           </div>
@@ -450,7 +544,7 @@
 
         <!-- Copyright text -->
         <div class="border-t py-4">
-          <p class="text-center tracking-wider">
+          <p class="text-center tracking-wider text-[18px]">
             Copyright &copy; 2023 | Growthan | All rights reserved.
           </p>
         </div>
