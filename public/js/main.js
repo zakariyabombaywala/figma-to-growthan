@@ -4,10 +4,6 @@ const nav = document.getElementById("nav");
 const navContainer = document.querySelector(".menu-container");
 const btnSlide = document.querySelectorAll(".btn-slide");
 
-// window.addEventListener("DOMContentLoaded", function () {
-
-// });
-
 // Fixed Nav
 window.addEventListener("scroll", function () {
   const navHeight = nav.getBoundingClientRect().height;
@@ -22,7 +18,6 @@ window.addEventListener("scroll", function () {
 
 // Hamburger Menu
 navBtn.addEventListener("click", function () {
-  console.log("click");
   mobileNav.classList.toggle("hidden");
 });
 
