@@ -24,7 +24,7 @@
     <title>Figma to Growthan</title>
   </head>
   <body>
-    <header id="header" class="fixed top-0 inset-x-0 z-50">
+    <header id="header" class="fixed top-0 inset-x-0 z-[9999]">
       <!-- Navbar -->
       <div id="nav">
         <!-- Flex Container -->
@@ -415,7 +415,7 @@
         <!-- Container -->
         <div class="container">
           <div
-            class="bg-gradient-to-br from-blue-200 via-red-400 to-yellow-300 p-10"
+            class="bg-gradient-to-br from-blue-200 via-red-400 to-yellow-300 p-20 space-y-16 md:px-40 pb-32"
           >
             <!-- Section Head -->
             <div class="flex flex-col items-center justify-center space-y-6">
@@ -429,29 +429,128 @@
               </h2>
             </div>
 
-            <!-- Content -->
-            <!-- col 1 -->
-            <div class="w-[90%] mx-auto py-16">
-              <div class="grid grid-cols-3 gap-16 place-items-center">
-                <div>
-                  <img src="./image/Graphics-image.png" alt="image" />
-                </div>
-
-                <div
-                  class="md:max-w-[86px] w-full md:max-h-[86px] h-full border-8 rounded-full border-blue-600 bg-white"
-                >
+            <!-- Content 1 -->
+            <div
+              class="grid grid-cols-1 place-items-center items-center gap-16 lg:grid-cols-[1fr_86px_1fr]"
+            >
+              <div class="order-1 lg:order-1">
+                <img
+                  src="./image/Graphics-image.png"
+                  class="ml-auto"
+                  alt="marketing"
+                />
+              </div>
+              <div
+                class="flex items-center justify-center flex-shrink-0 w-[86px] h-[86px] rounded-full border-8 border-blue-600 bg-white relative z-[500] lg:order-2"
+              >
+                <span class="text-3xl font-semibold text-blue">1</span>
+              </div>
+              <div class="flex items-center space-x-7 lg:order-3">
+                <div class="space-y-3">
                   <h3
-                    class="font-semibold md:text-3xl flex justify-center items-center h-full"
+                    class="text-[25px] font-semibold text-blue text-center lg:text-start"
                   >
-                    1
+                    Market Research
                   </h3>
-                </div>
-
-                <div class="flex flex-col items-start space-y-4">
-                  <h4 class="text-2xl font-semibold">Market Research</h4>
-                  <p class="text-[18px]">
+                  <p
+                    class="text-[18px] text-blue-900 text-center lg:text-start"
+                  >
                     We conduct thorough research to identify key opportunities
                     and trends.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Content 2 -->
+            <div
+              class="grid grid-cols-1 items-center place-items-center gap-16 relative z-[111] lg:grid-cols-[1fr_86px_1fr]"
+            >
+              <div class="order-3">
+                <img
+                  src="./image/progress-image.png"
+                  class="mr-auto"
+                  alt="marketing"
+                />
+              </div>
+              <div
+                class="order-1 flex items-center justify-center flex-shrink-0 w-[86px] h-[86px] rounded-full border-8 border-blue-600 bg-white before:content-[unset] lg:order-2 lg:before:content-[''] before:h-[100%] before:border-dashed before:border before:absolute before:border-blue before:bottom-[68%] before:z-[-1]"
+              >
+                <span class="text-3xl font-semibold text-blue">2</span>
+              </div>
+              <div class="flex items-center space-x-7 order-1">
+                <div class="space-y-3 text-end">
+                  <h3
+                    class="text-[25px] font-semibold text-blue text-center lg:text-end"
+                  >
+                    Analysis
+                  </h3>
+                  <p class="text-[18px] text-blue-900 text-center lg:text-end">
+                    We analyze your performance metrics, consumer behavior and
+                    trends.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Content 3 -->
+            <div
+              class="grid grid-cols-1 items-center place-items-center gap-16 relative z-40 lg:grid-cols-[1fr_86px_1fr]"
+            >
+              <div class="order-1 lg:order1">
+                <img
+                  src="./image/graph-image.png"
+                  class="ml-auto"
+                  alt="marketing"
+                />
+              </div>
+              <div
+                class="flex items-center justify-center flex-shrink-0 w-[86px] h-[86px] rounded-full border-8 border-blue-600 bg-white before:content-[unset] lg:before:content-[''] before:h-[100%] before:border-dashed before:border before:absolute before:border-blue before:bottom-[68%] before:z-[-1] lg:order-2"
+              >
+                <span class="text-3xl font-semibold text-blue">3</span>
+              </div>
+              <div class="flex items-center space-x-7 lg:order-3">
+                <div class="space-y-3">
+                  <h3
+                    class="text-[25px] font-semibold text-blue text-center lg:text-start"
+                  >
+                    Targeting
+                  </h3>
+                  <p
+                    class="text-[18px] text-blue-900 text-center lg:text-start"
+                  >
+                    We develop customized strategies that reach your target
+                    audience.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Content 4 -->
+            <div
+              class="grid grid-cols-1 items-center place-items-center gap-16 relative z-30 lg:grid-cols-[1fr_86px_1fr]"
+            >
+              <div class="order-3">
+                <img
+                  src="./image/linechart-image.png"
+                  class="mr-auto"
+                  alt="marketing"
+                />
+              </div>
+              <div
+                class="order-1 flex items-center justify-center flex-shrink-0 w-[86px] h-[86px] rounded-full border-8 border-blue-600 bg-white before:content-[unset] lg:order-2 lg:before:content-[''] before:h-[150%] before:border-dashed before:border before:absolute before:border-blue before:bottom-[68%] before:z-[-1]"
+              >
+                <span class="text-3xl font-semibold text-blue">4</span>
+              </div>
+              <div class="flex items-center space-x-7 order-1">
+                <div class="space-y-3 text-end">
+                  <h3
+                    class="text-[25px] font-semibold text-blue text-center lg:text-end"
+                  >
+                    Update Result
+                  </h3>
+                  <p class="text-[18px] text-blue-900 text-center lg:text-end">
+                    We provide regular updates and reports to keep you informed.
                   </p>
                 </div>
               </div>
